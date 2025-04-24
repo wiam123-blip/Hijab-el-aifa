@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Special+Gothic+Condensed+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Condensed+One&display=swap');
+
+body {
+    margin: 0;
+    /* font-weight: 500; */
+    
+}
+
+.main-header {
+    background-color: #FF99C7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    height: 80px;
+}
+
+
+.logo {
+    width: 200px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 20px;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 800 ;
+}
+
+.navigation ul li a:hover {
+    color: #FF99C7;
+}
+
+.navigation ul li {
+    padding: 10px 40px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.icons img {
+    width: 60px;
+}
+
+.promotion {
+    background-color: rgb(255, 153, 199, 25%);
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    border-radius: 0 0  30px 30px;
+}
+
+h1 {
+    font-size: 19px;
+    color: black;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 400 ;
+}
+
+.histoire {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 800 ;
+}
+
+h3 {
+    font-size: 20px;
+    color: #FF99C7;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 600 ;
+}
+
+p {
+    font-size: 17px;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 400 ;
+}
+
+.histoire img {
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+}
+
+.footer {
+    background-color: #FF99C7;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: space-between;
+    padding: 30px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+   
+}
+
+h5 {
+    font-size: 16px;
+    color: white;
+}
+
+h4 {
+    font-size: 16px;
+    color: white;
+}
+
+.contact img {
+    width: 30px;
+}
+
+
+
+.titre img {
+    width: 450px;
+}
+
+
+.telephone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: -35px;
+}
+
+.telephone a {
+    text-decoration: none;
+}
+
+.telephone h4:hover {
+    color: black;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.mail a{
+    text-decoration: none;
+}
+
+.mail h5:hover {
+    color: black;
+}
+
+
+.icon img{
+    width: 55px;
+}
+
+
+.logos {
+    width: 250px;
+}
+
+
