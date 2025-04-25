@@ -28,4 +28,3 @@ const burger = document.getElementById('burger-menu');
       const slideWidth = track.querySelector('img').clientWidth;
       track.style.transform = `translateX(-${slideWidth * index}px)`;
     });
-  

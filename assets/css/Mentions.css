@@ -85,39 +85,17 @@ h1 {
     border-radius: 2px;
 }
 
-.histoire {
-    margin-bottom: 100px;
-    margin-top: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-h2 {
-    font-size: 25px;
-    font-family: "Abhaya Libre", serif ;
-    font-weight: 800 ;
+strong {
+    color: red;
 }
 
 h3 {
-    font-size: 20px;
-    color: #FF99C7;
-    font-family: "Abhaya Libre", serif ;
-    font-weight: 600 ;
+    font-size: 25px;
+    text-align: center;
 }
 
-p {
-    font-size: 17px;
-    font-family: "Abhaya Libre", serif ;
-    font-weight: 400 ;
-}
-
-.histoire img {
-    width: 500px;
-    height: 500px;
-    margin-right: 100px;
+.text {
+    margin-left: 35px;
 }
 
 .footer {
@@ -128,12 +106,12 @@ p {
     justify-content: space-between;
     padding: 35px 20px;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h4,
 h5 {
-    font-size: 15px;
+    font-size: 16px;
     color: white;
 }
 
@@ -171,35 +149,14 @@ h5 {
 
 .mail a{
     text-decoration: none;
-    margin-top: 5px;
 }
 
 .icon img{
     width: 55px;
-    margin-top: 5px;
 }
 
 .logos {
-    position: relative;
-  width: 160px;
-  top: -5px;
+    width: 250px;
 }
-
-.Mentions a {
-    text-decoration: none;
-    color: white;
-}
-
-.Mentions a:hover {
-    color: black;
-}
-
-.Mentions {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-}
-
-
 
 
