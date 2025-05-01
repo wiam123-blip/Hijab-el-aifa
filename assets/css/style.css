@@ -150,6 +150,17 @@ h3 {
     height: 400px;
     border-radius: 10px;
 }
+.i1 {
+    filter:brightness(0.4) !important;
+    transition: filter 0.3s ease;
+    margin: 0 20px;
+
+
+}
+.i1:hover {
+    filter:brightness(1) !important;
+}
+
 
 .new-products {
     display: flex;
@@ -434,7 +445,7 @@ h5 {
     }
 }
 
-@media screen and (min-width:770px) and (max-width: 1024px) {
+@media screen and (min-width:768px) and (max-width: 1024px) {
     .logos {
         width: 100px;
         display: flex;
