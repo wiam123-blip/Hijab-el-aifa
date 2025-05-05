@@ -181,8 +181,9 @@ h5 {
 
 .logos {
     position: relative;
-  width: 160px;
-  top: -5px;
+    width: 160px;
+    top: -5px;
+    margin-left: -5px;
 }
 
 .Mentions a {

@@ -90,12 +90,31 @@ strong {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 500 ;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 800 ;
+}
+
+p {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 .text {
-    margin-left: 35px;
+    background-color: #fff6fa;
+}
+
+.text{
+    margin: 80px;
+
 }
 
 .footer {
