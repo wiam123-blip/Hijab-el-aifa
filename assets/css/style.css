@@ -150,17 +150,6 @@ h3 {
     height: 400px;
     border-radius: 10px;
 }
-.i1 {
-    filter:brightness(0.4) !important;
-    transition: filter 0.3s ease;
-    margin: 0 20px;
-
-
-}
-.i1:hover {
-    filter:brightness(1) !important;
-}
-
 
 .new-products {
     display: flex;
@@ -176,12 +165,12 @@ h3 {
     justify-content: space-between;
     padding: 35px 20px;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h4,
 h5 {
-    font-size: 16px;
+    font-size: 15px;
     color: white;
 }
 
@@ -219,14 +208,34 @@ h5 {
 
 .mail a{
     text-decoration: none;
+    margin-top: 5px;
 }
 
 .icon img{
     width: 55px;
+    margin-top: 5px;
 }
 
 .logos {
-    width: 250px;
+    position: relative;
+    width: 160px;
+    top: -5px;
+    margin-left: -5px;
+}
+
+.Mentions a {
+    text-decoration: none;
+    color: white;
+}
+
+.Mentions a:hover {
+    color: black;
+}
+
+.Mentions {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {

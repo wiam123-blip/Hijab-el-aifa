@@ -5,6 +5,8 @@ body {
     margin: 0;   
 }
 
+
+
 .main-header {
     background-color: #FF99C7;
     display: flex;
@@ -122,7 +124,7 @@ h1 {
 
 .blog {
     display: flex;
-    background-color: #fff6fa;
+    background-color: #ffedf5;
     padding: 25px;
     border-radius:35px;
     flex-direction: column;
@@ -212,14 +214,14 @@ h1 {
     align-items: center;
     height: 40px;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 35px 20px;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h4,
 h5 {
-    font-size: 16px;
+    font-size: 15px;
     color: white;
 }
 
@@ -227,20 +229,8 @@ h5 {
     width: 30px;
 }
 
-.mail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-
-.mail a{
-    text-decoration: none;
-}
-
-.telephone h4:hover,
-.mail h5:hover {
-    color: black;
+.titre img {
+    width: 450px;
 }
 
 .telephone {
@@ -255,12 +245,48 @@ h5 {
     text-decoration: none;
 }
 
+.mail h5:hover,
+.telephone h4:hover {
+    color: black;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.mail a{
+    text-decoration: none;
+    margin-top: 5px;
+}
+
 .icon img{
     width: 55px;
+    margin-top: 5px;
 }
 
 .logos {
-    width: 250px;
+    position: relative;
+    width: 160px;
+    top: -5px;
+    margin-left: -5px;
+}
+
+.Mentions a {
+    text-decoration: none;
+    color: white;
+}
+
+.Mentions a:hover {
+    color: black;
+}
+
+.Mentions {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
 
