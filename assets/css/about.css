@@ -5,13 +5,16 @@ body {
     margin: 0;   
 }
 
-.main-header {
+header {
     background-color: #FF99C7;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px;
+    padding: 8px 20px 8px 0px;
     height: 80px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
 }
 
 .logo {
@@ -56,11 +59,14 @@ body {
 }
 
 .promotion {
-    background-color: rgb(255, 153, 199, 25%);
+    background-color: #ffe6f1;
     display: flex;
     justify-content: center;
     height: 45px;
-    border-radius: 0 0  30px 30px;
+    border-radius: 0 0 30px 30px;
+    position: sticky;
+    z-index: 999;
+    top: 96px;
 }
 
 h1 {
@@ -85,93 +91,70 @@ h1 {
     border-radius: 2px;
 }
 
-.histoire {
-    margin-bottom: 100px;
-    margin-top: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
+.a-propos {
+    margin: 100px;
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 35px;
     font-family: "Abhaya Libre", serif ;
-    font-weight: 700 ;
+    font-weight: 100 ;
+    margin: 50px;
+    text-align: center;
 }
 
 h3 {
-    font-size: 27px;
+    font-size: 35px;
     color: #FF99C7;
     font-family: "Abhaya Libre", serif ;
-    font-weight: 600 ;
+    font-weight: 400 ;
+    text-align: center;
 }
 
 p {
     font-size: 20px;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-.histoire img {
-    width: 500px;
-    height: 500px;
-    margin-right: 100px;
-}
-
-.footer {
-    background-color: #FF99C7;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    justify-content: space-between;
-    padding: 35px 20px;
+span {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
-h4,
-h5 {
-    font-size: 15px;
-    color: white;
+.a-propos img {
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+    border-radius: 10px;
 }
 
-.contact img {
-    width: 30px;
-}
-
-.titre img {
-    width: 450px;
-}
-
-.telephone {
+footer {
+    background-color: #FF99C7;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 5px;
-    margin-bottom: -35px;
+    height: 85px;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
-.telephone a {
-    text-decoration: none;
-}
-
-.mail h5:hover,
-.telephone h4:hover {
+.contact a:hover {
     color: black;
 }
 
-.mail {
+.contact {
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
+ }
 
-.mail a{
+.contact a {
     text-decoration: none;
-    margin-top: 5px;
+    font-size: 17px;
+    color: white;
 }
 
 .icon img{
@@ -182,8 +165,6 @@ h5 {
 .logos {
     position: relative;
     width: 160px;
-    top: -5px;
-    margin-left: -5px;
 }
 
 .Mentions a {
@@ -201,6 +182,132 @@ h5 {
     align-items: center;
 }
 
+
+@media screen and (max-width: 768px){
+    header {
+        flex-direction: row;
+        height: 30px;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .navigation img {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .navigation ul li a {
+        display: flex;
+        gap: 8px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .navigation ul {
+        position: fixed;
+        top: 75px;
+        left: 5px;
+        background-color: #FF99C7;
+        width: 150px;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .navigation ul li {
+        background-color: transparent;
+        padding: 2px 0;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-menu span {
+        background-color: white;
+    }
+
+    .navigation {
+        display: none;
+        width: 100%;
+        background-color: #FF99C7;
+        overflow: hidden;
+        z-index: 1000;
+    }
+
+    .navigation.active {
+        display: block;
+    }
+
+    .menu-title {
+        display: block;
+        font-size: 20px;
+        color: #FF99C7;
+    }
+
+    .supprimer {
+        display: none;
+    }
+
+    .icons img {
+        width: 40px;
+    }
+
+    .promotion {
+        padding: 10px;
+        height: 15px;
+        top: 70px;
+    }
+
+    h1 {
+        margin-top: -1px;
+        font-size: 12px;
+        text-align: center;
+    }
+    h2, h3 {
+        font-size: 20px;
+        margin: 25px;
+    }
+
+    .a-propos {
+        margin: 55px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+    }
+    .a-propos img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    p {
+        font-size: 15px;
+    }
+    footer {
+        height: 55px;
+    }
+    .logos {
+        display: none;
+    }
+    .contact a {
+        font-size:10px ;   
+     }
+     .icon img{
+        width:25px ;
+     }
+     .Mentions a {
+        font-size: 10px;
+     }
+
+
+}
 
 
 

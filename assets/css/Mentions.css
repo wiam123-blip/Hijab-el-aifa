@@ -5,13 +5,16 @@ body {
     margin: 0;   
 }
 
-.main-header {
+header {
     background-color: #FF99C7;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px;
+    padding: 8px 20px 8px 0px;
     height: 80px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
 }
 
 .logo {
@@ -111,6 +114,7 @@ p {
 .text {
     background-color: #ffedf5;
     padding: 15px;
+    border-radius: 30px;
 }
 
 .text{
@@ -118,58 +122,30 @@ p {
 
 }
 
-.footer {
+footer {
     background-color: #FF99C7;
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 85px;
     justify-content: space-between;
-    padding: 35px 20px;
+    padding: 8px 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
-h4,
-h5 {
-    font-size: 15px;
-    color: white;
-}
-
-.contact img {
-    width: 30px;
-}
-
-.titre img {
-    width: 450px;
-}
-
-.telephone {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: -35px;
-}
-
-.telephone a {
-    text-decoration: none;
-}
-
-.mail h5:hover,
-.telephone h4:hover {
+.contact a:hover {
     color: black;
 }
 
-.mail {
+.contact {
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
+ }
 
-.mail a{
+.contact a {
     text-decoration: none;
-    margin-top: 5px;
+    font-size: 17px;
+    color: white;
 }
 
 .icon img{
@@ -180,8 +156,6 @@ h5 {
 .logos {
     position: relative;
     width: 160px;
-    top: -5px;
-    margin-left: -5px;
 }
 
 .Mentions a {
