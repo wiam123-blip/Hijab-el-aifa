@@ -1,0 +1,41 @@
+{
+    "articles": [
+      {
+        "id": 1,
+        "titre": "Road-trip en Provence : itinéraire incontournable",
+        "image": "./images/provence.jpg",
+        "description": "Parcourez les plus beaux villages de Provence en voiture, de Gordes aux Baux-de-Provence, en passant par les champs de lavande de Valensole.",
+        "prix": "Claire Moulin"
+      },
+      {
+        "id": 2,
+        "titre": "Road-trip en Provence : itinéraire incontournable",
+        "image": "./images/provence.jpg",
+        "description": "Parcourez les plus beaux villages de Provence en voiture, de Gordes aux Baux-de-Provence, en passant par les champs de lavande de Valensole.",
+        "prix": "Claire Moulin"
+      },
+      {
+        "id": 3,
+        "titre": "Road-trip en Provence : itinéraire incontournable",
+        "image": "./images/provence.jpg",
+        "description": "Parcourez les plus beaux villages de Provence en voiture, de Gordes aux Baux-de-Provence, en passant par les champs de lavande de Valensole.",
+        "prix": "Claire Moulin"
+      },
+      {
+        "id": 4,
+        "titre": "Road-trip en Provence : itinéraire incontournable",
+        "image": "./images/provence.jpg",
+        "description": "Parcourez les plus beaux villages de Provence en voiture, de Gordes aux Baux-de-Provence, en passant par les champs de lavande de Valensole.",
+        "prix": "Claire Moulin"
+      },
+      {
+        "id": 5,
+        "titre": "Road-trip en Provence : itinéraire incontournable",
+        "image": "./images/provence.jpg",
+        "description": "Parcourez les plus beaux villages de Provence en voiture, de Gordes aux Baux-de-Provence, en passant par les champs de lavande de Valensole.",
+        "prix": "Claire Moulin"
+      }
+      
+      
+    ]
+}
