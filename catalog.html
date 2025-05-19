@@ -22,13 +22,13 @@
             <li><a href="index.html"><img src="assets/images/maison.png" alt="nav-icon"> Accueil</a></li>
             <li><a href="catalog.html"><img src="assets/images/chercher.png" alt="nav-icon"> Catalogue</a></li>
             <li><a href="about.html"><img src="assets/images/info.png" alt="nav-icon">À propos</a></li>
-            <li class="menu-title"><a href="favori.html"><img src="assets/images/prefere.png" alt="nav-icon">Favoris</a></li>
-            <li class="menu-title"><a href=""><img src="assets/images/hijab.png" alt="nav-icon">Connexion</a></li>
+            <li class="menu-title"><a id="favorisIcon"><img src="assets/images/prefere.png" alt="nav-icon">Favoris</a></li>
+            <li class="menu-title"><a onclick="openFormulaire()"><img src="assets/images/hijab.png" alt="nav-icon">Connexion</a></li>
         </ul>
     </nav>
   <div class="icons">
-      <a class="supprimer" href="favori.html"><img src="assets/images/prefere.png" alt="icon de favori"></a>
-      <a class="supprimer" href="cnx.html"><img src="assets/images/hijab.png" alt="icon de connecter"></a>
+      <a class="supprimer" id="favorisIcon"><img src="assets/images/prefere.png" alt="icon de favori"></a>
+      <a class="supprimer" onclick="openFormulaire()"><img src="assets/images/hijab.png" alt="icon de connecter"></a>
       <a href="panier.html"><img src="assets/images/sac-de-courses.png" alt="icon de panier"></a>
  </div>
 </header> 
@@ -37,7 +37,39 @@
     <h1>Livraison gratuits partout en FRANCE</h1>
   </section>
 
-  <section>
+<div id="authFormulaire" class="modal-overlay" style="display:none;">
+<div class="formulaire">
+  <div class="tabs">
+    <div class="tab active" onclick="showForm('connecter')">Connexion</div>
+    <div class="tab" onclick="showForm('inscrire')">Inscription</div>
+  </div>
+
+
+  <form id="connecter" class="active">
+    <input type="email" placeholder="E-mail" required>
+    <input type="password" placeholder="Mot de passe" required>
+    <button type="submit">CONNECTER</button>
+  </form>
+
+
+  <form id="inscrire">
+    <input type="email" placeholder="E-mail" required>
+    <input type="password" placeholder="Mot de passe" required>
+    <input type="text" placeholder="Prénom" required>
+    <input type="text" placeholder="Nom" required>
+    <input type="tel" placeholder="+33 Téléphone" required>
+    <button type="submit">CRÉER UN COMPTE</button>
+  </form>
+
+  <div class="close" onclick="closeFormulaire()">X</div>
+</div>
+</div>
+
+
+
+
+
+  <section class="Catalogue">
       <h2>Sublimez votre tenue avec Hijab El Aifa</h2>
     <div class="collection">
         <div class="blog">
@@ -49,7 +81,7 @@
              <h4>25,99 EUR</h4>
             </div>
             <div class="btn">
-               <a class="btn-favori" href="favori.html">Favoris</a>
+               <a class="btn-favori"  href="favori.html">Favoris</a>
                <a class="btn-panier" href="panier.html"> Ajouter au panier</a>
             </div>
         </div> 
@@ -63,7 +95,7 @@
                <h4>23,70 EUR</h4>
               </div>
             <div class="btn">
-               <a class="btn-favori" href="favori.html">Favoris</a>
+               <a class="btn-favori" class="ajouter-favori" data-name="Nom de l’article" href="favori.html">Favoris</a>
                <a class="btn-panier" href="panier.html"> Ajouter au panier</a>
             </div>
         </div>

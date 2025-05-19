@@ -11,31 +11,32 @@
 <body>
 
   <header>
-        <div class="burger-menu" id="burger-menu">
-          <span ></span>
-          <span ></span>
-          <span ></span>
-      </div>
-      <img class="logo" src="assets/images/Mon-logo.png" alt="logo"> 
-      <nav class="navigation" id="nav-menu">
-          <ul>
-              <li><a href="index.html"><img src="assets/images/maison.png" alt="nav-icon"> Accueil</a></li>
-              <li><a href="catalog.html"><img src="assets/images/chercher.png" alt="nav-icon"> Catalogue</a></li>
-              <li><a href="about.html"><img src="assets/images/info.png" alt="nav-icon">À propos</a></li>
-              <li class="menu-title"><a href="favori.html"><img src="assets/images/prefere.png" alt="nav-icon">Favoris</a></li>
-              <li class="menu-title"><a href=""><img src="assets/images/hijab.png" alt="nav-icon">Connexion</a></li>
-          </ul>
-      </nav>
-    <div class="icons">
-        <a class="supprimer" href="favori.html"><img src="assets/images/prefere.png" alt="icon de favori"></a>
-        <a class="supprimer" href="cnx.html"><img src="assets/images/hijab.png" alt="icon de connecter"></a>
-        <a href="panier.html"><img src="assets/images/sac-de-courses.png" alt="icon de panier"></a>
-    </div>
-  </header> 
+    <div class="burger-menu" id="burger-menu">
+      <span ></span>
+      <span ></span>
+      <span ></span>
+  </div>
+  <img class="logo" src="assets/images/Mon-logo.png" alt="logo principal"> 
+  <nav class="navigation" id="nav-menu">
+      <ul>
+          <li><a href="index.html"><img src="assets/images/maison.png" alt="icon d'accueil"> Accueil</a></li>
+          <li><a href="catalog.html"><img src="assets/images/chercher.png" alt="icon de ctalogue"> Catalogue</a></li>
+          <li><a href="about.html"><img src="assets/images/info.png" alt="icon du propos de nous">À propos</a></li>
+          <li class="menu-title"><a href="favori.html"><img src="assets/images/prefere.png" alt="icon de favoris">Favoris</a></li>
+          <li class="menu-title"><a onclick="openFormulaire()"><img src="assets/images/hijab.png" alt="icon de connexion">Connexion</a></li>
+      </ul>
+  </nav>
+<div class="icons">
+    <a class="supprimer" href="favori.html"><img src="assets/images/prefere.png" alt="icon de favori"></a>
+    <a class="supprimer" onclick="openFormulaire()"><img src="assets/images/hijab.png" alt="icon de connecter"></a>
+    <a href="panier.html"><img src="assets/images/sac-de-courses.png" alt="icon de panier"></a>
+</div>
+</header>  
 
   <section class="promotion">
     <h1>Livraison gratuits partout en FRANCE</h1>
   </section>
+  
   <section class="panier">
         <h2>Panier</h2>
         <a href=""><img src="assets/images/partager.png" alt="icon de partager"></a>
@@ -44,12 +45,8 @@
 
 
   <footer>
-    <img src="" alt="">
-    <h2>Tout</h2>
-    <h3></h3>
-
     <button><a href="">PAYER</a></button>
   </footer>
-
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

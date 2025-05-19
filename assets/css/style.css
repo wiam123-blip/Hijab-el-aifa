@@ -5,6 +5,8 @@ body {
     margin: 0;   
 }
 
+/* header-debut */
+
 header {
     background-color: #FF99C7;
     display: flex;
@@ -56,7 +58,12 @@ header {
 
 .icons img {
     width: 60px;
+    cursor: pointer;
 }
+
+/* header-fin */
+
+/* barre de promotion-debut */
 
 .promotion {
     background-color: #ffe6f1;
@@ -76,13 +83,111 @@ h1 {
     font-weight: 400 ;
 }
 
-h2 {
-    font-size: 65px;
-    text-align: center;
-    margin-top: 50px;
-    font-family: "Abhaya Libre", serif ;
-    font-weight: 100 ;
+/* barre de promotion-fin */
+
+/* <!-- formulaire de connexion-debut --> */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
+  
+.formulaire {
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    position: relative;
+}
+  
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+  
+.tab {
+    font-weight: bold;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+  
+.tab.active {
+    border-bottom: 2px solid pink;
+}
+  
+form {
+    display: none;
+    flex-direction: column;
+}
+  
+form.active {
+    display: flex;
+}
+  
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+  
+.forgot {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+  
+button {
+    background-color: #ffeaf4;
+    color: black;
+    border: none;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+}
+
+button:hover{
+    color: white;
+    background-color: #FF99C7;
+}
+
+.close:hover{
+    background-color: #ffeaf4;
+}
+  
+.close {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: pink;
+    border: 1px solid pink;
+    cursor: pointer;
+}
+
+/* <!-- formulaire de connexion-fin --> */
+/* burger menu-debut */
+
 .burger-menu {
     display: none;
     flex-direction: column;
@@ -98,17 +203,24 @@ h2 {
     border-radius: 2px;
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+/* burger menu-fin */
+
+h2 {
+    font-size: 65px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 100 ;
 }
 
-.image {
-    height: 550px; 
+.image-principal img {
+    width: 90%;
+    height: 550px;
+    border-radius: 10px;
+  }
+.image-principal{
     display: flex;
-  justify-content: center;
-  padding: 0 20px;
+    justify-content: center;
 }
 
 h3 {
@@ -134,9 +246,10 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .collection {
-    /* display: flex; */
     margin: 0 50px;
 }
+
+/* footer-debut */
 
 footer {
     background-color: #FF99C7;
@@ -189,6 +302,10 @@ footer {
     align-items: center;
 }
 
+/* footer-fin */
+
+/* version mobile */
+
 @media screen and (max-width: 768px){
     header {
         flex-direction: row;
@@ -208,6 +325,7 @@ footer {
         gap: 8px;
         font-size: 20px;
         color: white;
+        cursor: pointer;
     }
     .navigation ul {
         position: fixed;
@@ -244,7 +362,7 @@ footer {
     .menu-title {
         display: block;
         font-size: 20px;
-        color: #FF99C7;
+        color: white;
     }
     .supprimer {
         display: none;
@@ -267,8 +385,8 @@ footer {
         font-size: 25px;
         margin: 30px;
     }
-    .image {
-        height: 350px; 
+    .image-principal img {
+        height: 300px;
     }
     h3 {
         font-size: 20px;
@@ -311,6 +429,8 @@ footer {
      }
 }
 
+/* version tablette */
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     header {
         flex-direction: row;
@@ -334,6 +454,7 @@ footer {
         font-size: 20px;
         color: white;
         text-align: center;
+        cursor: pointer;
     }
     .navigation ul {
         margin: 0;
@@ -351,6 +472,7 @@ footer {
     .navigation ul li {
         background-color: transparent;
         padding: 2px 0;
+        
     }
     .burger-menu {
         display: flex;
@@ -400,8 +522,8 @@ footer {
         margin: 35px;
     }
     
-    .image {
-        height: 450px; 
+    .image-principal img {
+        height: 450px;
     }
 
     h3 {
