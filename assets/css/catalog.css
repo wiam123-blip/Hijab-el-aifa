@@ -140,6 +140,10 @@ input {
     margin-bottom: 15px;
     font-size: 14px;
 }
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffcbd9;
+  }
   
 .forgot {
     font-size: 12px;
@@ -151,13 +155,14 @@ button {
     background-color: #ffeaf4;
     color: black;
     border: none;
-    font-size: 22px;
+    font-size: 16px;
     padding: 12px;
     border-radius: 30px;
     cursor: pointer;
     font-family: "Abhaya Libre", serif;
     font-weight: 600;
-}
+    }
+
 button:hover{
     color: white;
     background-color: #FF99C7;
@@ -169,8 +174,8 @@ button:hover{
   
 .close {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 5px;
+    bottom: 5px;
     background-color: white;
     border-radius: 50%;
     width: 30px;
@@ -184,6 +189,342 @@ button:hover{
 }
 
 /* <!-- formulaire de connexion-fin --> */
+
+
+/* formulaire de panier_debut */
+
+.formulaire-panier {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+}
+  
+.Panier {
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 0 25px;
+    position: relative;
+}
+  
+
+.panierPartager {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+.panierPartager img {
+    width: 30px;
+    height: 30px;
+}
+.images {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.article {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.text p {
+    margin: 0;
+    font-size: 15px;
+}
+.text h4{
+    font-size: 15px;
+}
+.text h6{
+    font-size: 15px;
+}
+.panierPartager h5 {
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+}
+  
+  
+.btn {
+    background-color: #ffeaf4;
+    color: black;
+    border: none;
+    font-size: 19px;
+    padding: 8px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+}
+.qualité {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #FF99C7;
+}
+
+.fermer:hover{
+    background-color: #ffeaf4;
+}
+  
+.fermer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: pink;
+    border: 1px solid pink;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+    align-items: center;
+}
+.payer {
+    color: white;
+    background-color: #FF99C7;
+    font-size: 15px;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin: 12px;
+}
+.payer:hover {
+    color: black;
+    background-color: #FF99C7;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.total h4,
+.total h5{
+    color:  black;
+}
+
+input[type="checkbox"] {
+    accent-color: black;
+    margin: 0;
+  }
+  label {
+    gap: 5px;
+    display: flex;
+  }
+/* formulaire de panier-fin */
+
+/* formulaire de paiement_debut */
+.Paiement form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .Paiement input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .Paiement h5{
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    margin: 0;
+  }
+  .Paiement{
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    position: relative;
+  }
+  
+  .Paiement button[type="submit"] {
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .authPaiement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .Paiement h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  
+  .Paiement input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.2s;
+  }
+  
+  .Paiement input:focus {
+    border-color: #ff7f9c;
+    outline: none;
+    box-shadow: 0 0 5px #ffcbd9;
+  }
+  
+  .Paiement button[type="submit"] {
+    padding: 12px;
+    background-color: #FF99C7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .Paiement button[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+.Paiement .close-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: pink;
+    border: 1px solid pink;
+    cursor: pointer;
+}
+
+  /* formulaire de paiement_fin */
+
+/* formulaire de favori_debut */
+
+.formulaire-Favori {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+}
+  
+.Favori {
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    position: relative;
+}
+.active h5 {
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+}
+.img_fav {
+   width: 120px;
+   height: 115px;
+   border-radius: 5px;
+}
+.info-article{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.info-article h4{
+    font-size: 15px;
+     margin: 0;
+}
+.info-article h6{
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.article-fav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.ajouter{
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+.ajouter button {
+    background-color: #ffeaf4;
+    color: black;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+}
+.ajouter button:hover{
+    color: white;
+    background-color: #FF99C7;
+}
+
+/* formulaire de favori_fin */
 /* burger menu-debut */
 
 .burger-menu {
@@ -213,7 +554,7 @@ h2 {
 }
 
 .Catalogue {
-    margin: 0 85px;
+    margin: 0 45px;
 }
 
 .collection {
@@ -221,7 +562,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 75px;
+  grid-column-gap: 25px;
   grid-row-gap: 100px;
   margin-bottom: 100px;
 }
@@ -240,6 +581,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0,0,0,.2);
   padding: 10px;
+  justify-content: space-between;
 }
 
 .collection h3 {
@@ -264,13 +606,14 @@ h2 {
     font-weight: 400;
 }
 
-.btn {
+.btn-2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
     font-family: "Abhaya Libre", serif ;
     font-weight: 600 ;
+    padding: 10px 0;
 }
 
 .btn-favori  {
@@ -289,16 +632,17 @@ h2 {
 
 .btn-panier {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
-    background-color:  #FF99C7;
+    background-color:  #ffe1ef;
     border-radius: 15px;
     padding: 10px 20px;
     box-shadow: 0px 5px 10px rgba(0,0,0,.2);
 }
 
 .btn-panier:hover {
-    color: black;
+    color: white;
+    background-color: #FF99C7;
 }
 
 /* footer-debut */
@@ -433,6 +777,35 @@ footer {
         font-size: 12px;
         text-align: center;
     }
+    .formulaire {
+        width: 300px;
+    }
+
+    .Panier {
+        width: 320px;
+    }
+    .images {
+        width: 180px;
+        height: 180px;
+    }
+    .text h6 {
+        font-size: 13px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .text h4 {
+        font-size: 13px;
+    }
+    .total h4, .total h5 {
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    .Paiement {
+        width: 300px;
+    }
    
     h2 {
         font-size: 18px;
@@ -459,7 +832,7 @@ footer {
 
     .btn-panier,
     .btn-favori {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     footer {
@@ -585,6 +958,9 @@ footer {
 
     .collection h4 {
         font-size: 16px;
+    }
+    .blog {
+        justify-content: space-between;
     }
 
 
