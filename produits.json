@@ -1,0 +1,62 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "titre": "Foulard jersey premium en marron",
+      "image": "assets/images/foulard marron.jpg",
+      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "prix": "23,70 EUR"
+    },
+    {
+      "id": 2,
+      "titre": "Foulard jersey premium en noire",
+      "image": "assets/images/foulard noire.jpg",
+      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "prix": "28,99 EUR"
+    },
+    {
+      "id": 3,
+      "titre": "Foulard jersey premium en bordeaux",
+      "image": "assets/images/foulard bordeaux.jpg",
+      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "prix": "23,70 EUR"
+    },
+    {
+      "id": 4,
+      "titre": "Foulard jersey premium en vert olive",
+      "image": "assets/images/foulard vert olive.jpg",
+      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "prix": "25,50 EUR"
+    },
+    {
+      "id": 5,
+      "titre": "Foulard jersey premium en beige",
+      "image": "assets/images/foulard beige.jpg",
+      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "prix": "28,70 EUR"
+    },
+    {
+      "id": 6,
+      "titre": "Foulard jersey premium en violet",
+      "image": "assets/images/foulard violet.png",
+      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "prix": "25,70 EUR"
+    },
+    {
+      "id": 7,
+      "titre": "Foulard jersey premium en rose",
+      "image": "assets/images/foulard rose.jpg",
+      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "prix": "23,70 EUR"
+    },
+    {
+      "id": 8,
+      "titre": "Foulard jersey premium en orange",
+      "image": "assets/images/foulard orange.jpg",
+      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "prix": "22,50 EUR"
+    }
+    
+  ]
+  
+}

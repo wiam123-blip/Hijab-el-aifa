@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Special+Gothic+Condensed+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Condensed+One&display=swap');
+
+body {
+    margin: 0;   
+}
+
+/* Header */
+header {
+    background-color: #5c5c5c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px 8px 0px;
+    height: 80px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo {
+    width: 200px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li a  {
+    padding: 10px 40px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 20px;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 500 ;
+}
+
+.navigation ul li a:hover{
+    background-color: #C19A6B;
+    color: white;
+}
+
+.icons img {
+    width: 60px;
+    cursor: pointer;
+}
+
+/* <!-- formulaire de connexion --> */
+#authFormulaire {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.formulaire {
+    width: 400px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 35px;
+    position: relative;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+ 
+.tab {
+    font-weight: bold;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.tab.active {
+    border-bottom: 2px solid #a77b50;
+}
+form {
+    display: none;
+    flex-direction: column;
+}
+form.active {
+    display: flex;
+}
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #a77b50;
+}
+.forgot {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #C19A6B;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+}
+button:hover{
+    background-color: #a77b50;
+}
+.close:hover{
+    color: rgba(108, 108, 108);
+    border: 1px solid rgba(108, 108, 108);
+}
+.close {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: rgba(108, 108, 108, 0.2);
+    border: 1px solid rgba(108, 108, 108, 0.2);
+    cursor: pointer;
+}
+
+/* formulaire de panier */
+.formulaire-panier {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.Panier {
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 0 25px;
+    position: relative;
+}
+.panierPartager {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+.actives{
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    margin: 0;
+}
+.panierPartager img {
+    width: 30px;
+    height: 30px;
+}
+.images {
+    width: 155px;
+    height: 200px;
+    border-radius: 5px;
+}
+.article {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.text p {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+.text h4{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.text h6{
+    font-size: 15px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+.panierPartager h5 {
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+}
+.qualité {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.fermer:hover{
+    color: rgba(108, 108, 108);
+    border: 1px solid rgba(108, 108, 108);
+}
+.fermer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: rgba(108, 108, 108, 0.2);
+    border: 1px solid rgba(108, 108, 108, 0.2);
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+    align-items: center;
+}
+.payer {
+    color: white;
+    background-color: #C19A6B;
+    font-size: 16px;
+    padding: 0 20px;
+    border-radius: 5px;
+    margin: 15px;
+}
+.payer:hover {
+    background-color: #a77b50;
+}
+.total {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.total h4 {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+input[type="checkbox"] {
+    accent-color: black;
+    margin: 0;
+}
+label {
+    gap: 5px;
+    display: flex;
+}
+
+/* formulaire de paiement */
+.Paiement form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+  
+.Paiement input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.Paiement h5{
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    margin: 0;
+}
+.Paiement{
+    width: 400px;
+    background: white;
+    border-radius:5px;
+    padding: 35px;
+    position: relative;
+}
+  
+.Paiement button[type="submit"] {
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.authPaiement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.Paiement h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Paiement input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.2s;
+}
+.Paiement input:focus {
+    border-color: #a77b50;
+    outline: none;
+    box-shadow: 0 0 5px #ffcbd9;
+}
+.Paiement button[type="submit"] {
+    padding: 12px;
+    background-color: #C19A6B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.Paiement button[type="submit"]:hover {
+    background-color: #a77b50;
+}
+.Paiement .close-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: pink;
+    border: 1px solid pink;
+    cursor: pointer;
+}
+
+/* formulaire de favori */
+.formulaire-Favori {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.Favori {
+    width: 400px;
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+.active h5 {
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    margin: 20px;
+}
+.img_fav {
+   width: 120px;
+   height: 130px;
+   border-radius: 5px;
+}
+.info-article{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.info-article h4{
+    font-size: 18x;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.info-article h6{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.article-fav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.ajouter{
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+.ajouter button {
+    background-color: #C19A6B;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+}
+.ajouter button:hover{
+    background-color: #a77b50;
+}
+
+/* produit detail */
+.produit-details {
+    display: flex;
+    gap: 30px;
+    padding: 55px;
+}
+.produit-details img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.produit_info {
+  max-width: 555px;
+  margin-top: 10px;
+}
+.produit_info h1{
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif ;
+    font-weight: 700 ;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.produit_info p{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.produit_info h2{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+    margin: 0;
+}
+.produit_info button {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.produit_info button:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* Footer */
+footer {
+    background-color: #5c5c5c;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.contact a:hover {
+    color: #C19A6B;
+}
+
+.contact {
+    flex-direction: column;
+    display: flex;
+ }
+
+.contact a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+.Réseaux-sociaux img{
+    width: 50px;
+    margin-top: 5px;
+}
+
+.Mentions img {
+    position: relative;
+    width: 160px;
+}
+
+.Mentions a {
+    text-decoration: none;
+    color: white;
+}
+
+.Mentions a:hover {
+    color: #C19A6B;
+}
+
+.Mentions {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+/* version mobile */
+@media screen and (max-width: 768px){
+    header {
+        flex-direction: row;
+        height: 30px;
+        padding: 20px 10px;
+    }
+    .logo {
+        width: 140px;
+    }
+
+    .icons img {
+        width: 40px;
+    }
+
+    .formulaire {
+        width: 300px;
+    }
+
+    .Panier {
+        width: 320px;
+    }
+    .images {
+        width: 180px;
+        height: 180px;
+    }
+    .text h6 {
+        font-size: 13px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .text h4 {
+        font-size: 13px;
+    }
+    .total h4, .total h5 {
+        font-size: 14px;
+    }
+      .btn {
+        font-size: 15px;
+    }
+    .Paiement {
+        width: 300px;
+    }
+
+
+/* Footer */
+    footer {
+        height: 55px;
+    }
+    .Mentions img {
+        display: none;
+    }
+    .contact a {
+        font-size:10px ;   
+     }
+    .Réseaux-sociaux img{
+        width: 25px;
+    }
+    .Mentions a {
+        font-size: 10px;
+    }
+}
+
+/* version tablette */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .logo{
+        width: 155px;
+    }
+    .navigation ul li a{
+        padding: 9px 30px;
+        font-size: 18px;
+    }
+    .icons img {
+        width: 45px;
+    }
+
+/* Footer */
+    .Réseaux-sociaux img{
+        width:45px ;
+    }
+    .Mentions img{
+        width: 140px;
+    }
+     .Mentions a,
+     .contact a {
+        font-size:15px ;   
+    }
+}
+
+
+

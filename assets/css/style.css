@@ -1,14 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Special+Gothic+Condensed+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Condensed+One&display=swap');
 
 body {
     margin: 0;   
 }
 
-/* header-debut */
-
+/* Header */
 header {
-    background-color: #FF99C7;
+    background-color: #5c5c5c;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,64 +29,30 @@ header {
     margin: 0;
     padding: 0;
 }
-
-.navigation ul li {
+.navigation ul li a  {
     padding: 10px 40px;
     background-color: white;
-    border-radius: 30px;
-}
-
-.navigation ul li a {
-    text-decoration: none;
     color: black;
+    border-radius: 5px;
+    text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
     font-size: 20px;
     font-family: "Abhaya Libre", serif ;
     font-weight: 500 ;
 }
-
-.navigation ul li a:hover {
-    color: #FF99C7;
+.navigation ul li a:hover{
+    background-color:#C19A6B;
+    color: white;
 }
-
-.menu-title,
-.navigation img{
-    display: none;
-}
-
 .icons img {
     width: 60px;
     cursor: pointer;
 }
 
-/* header-fin */
-
-/* barre de promotion-debut */
-
-.promotion {
-    background-color: #ffe6f1;
-    display: flex;
-    justify-content: center;
-    height: 45px;
-    border-radius: 0 0 30px 30px;
-    position: sticky;
-    z-index: 999;
-    top: 96px;
-}
-
-h1 {
-    font-size: 19px;
-    color: black;
-    font-family: "Abhaya Libre", serif ;
-    font-weight: 400 ;
-}
-
-/* barre de promotion-fin */
-
-/* <!-- formulaire de connexion-debut --> */
-
-.modal-overlay {
+/* <!-- formulaire de connexion --> */
+#authFormulaire {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -99,41 +64,35 @@ h1 {
     align-items: center;
     z-index: 9999;
 }
-  
 .formulaire {
     width: 400px;
     background: white;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    padding: 30px;
+    padding: 35px;
     position: relative;
 }
-  
 .tabs {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
-  
+ 
 .tab {
     font-weight: bold;
     padding-bottom: 5px;
     cursor: pointer;
 }
-  
 .tab.active {
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid #a77b50;
 }
-  
 form {
     display: none;
     flex-direction: column;
 }
-  
 form.active {
     display: flex;
 }
-  
 input {
     border: none;
     border-bottom: 1px solid #ccc;
@@ -143,36 +102,31 @@ input {
 }
 input:focus {
     outline: none;
-    box-shadow: 0 0 5px #ffcbd9;
-  }
-  
+    box-shadow: 0 0 5px #a77b50;
+}
 .forgot {
     font-size: 12px;
     color: #666;
     margin-bottom: 20px;
 }
-  
 button {
-    background-color: #ffeaf4;
-    color: black;
+    background-color: #C19A6B;
+    color: white;
     border: none;
     font-size: 16px;
     padding: 12px;
-    border-radius: 30px;
+    border-radius: 5px;
     cursor: pointer;
     font-family: "Abhaya Libre", serif;
     font-weight: 600;
-    }
-
+}
 button:hover{
-    color: white;
-    background-color: #FF99C7;
+    background-color: #a77b50;
 }
-
 .close:hover{
-    background-color: #ffeaf4;
+    color: rgba(108, 108, 108);
+    border: 1px solid rgba(108, 108, 108);
 }
-  
 .close {
     position: absolute;
     right: 5px;
@@ -184,16 +138,12 @@ button:hover{
     text-align: center;
     line-height: 30px;
     font-weight: bold;
-    color: pink;
-    border: 1px solid pink;
+    color: rgba(108, 108, 108, 0.2);
+    border: 1px solid rgba(108, 108, 108, 0.2);
     cursor: pointer;
 }
 
-/* <!-- formulaire de connexion-fin --> */
-
-
-/* formulaire de panier_debut */
-
+/* formulaire de panier */
 .formulaire-panier {
     position: fixed;
     top: 0;
@@ -205,9 +155,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    
 }
-  
 .Panier {
     width: 400px;
     background: white;
@@ -216,8 +164,6 @@ button:hover{
     padding: 0 25px;
     position: relative;
 }
-  
-
 .panierPartager {
     display: flex;
     flex-direction: row;
@@ -225,12 +171,18 @@ button:hover{
     align-items: center;
     height: 85px;
 }
+.actives{
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    margin: 0;
+}
 .panierPartager img {
     width: 30px;
     height: 30px;
 }
 .images {
-    width: 200px;
+    width: 155px;
     height: 200px;
     border-radius: 5px;
 }
@@ -246,32 +198,26 @@ button:hover{
     flex-direction: column;
     margin: 0;
 }
-
 .text p {
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 .text h4{
-    font-size: 15px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin: 10px 0;
 }
 .text h6{
     font-size: 15px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    margin: 0 0 15px 0;
 }
 .panierPartager h5 {
     font-size: 25px;
-    font-family: "Abhaya Libre", serif;
-    font-weight: 500;
-}
-  
-  
-.btn {
-    background-color: #ffeaf4;
-    color: black;
-    border: none;
-    font-size: 19px;
-    padding: 8px 0;
-    border-radius: 30px;
-    cursor: pointer;
     font-family: "Abhaya Libre", serif;
     font-weight: 500;
 }
@@ -280,16 +226,10 @@ button:hover{
     flex-direction: row;
     gap: 5px;
 }
-
-.btn:hover{
-    color: white;
-    background-color: #FF99C7;
-}
-
 .fermer:hover{
-    background-color: #ffeaf4;
+    color: rgba(108, 108, 108);
+    border: 1px solid rgba(108, 108, 108);
 }
-  
 .fermer {
     position: absolute;
     right: 5px;
@@ -301,11 +241,10 @@ button:hover{
     text-align: center;
     line-height: 30px;
     font-weight: bold;
-    color: pink;
-    border: 1px solid pink;
+    color: rgba(108, 108, 108, 0.2);
+    border: 1px solid rgba(108, 108, 108, 0.2);
     cursor: pointer;
 }
-
 .footer {
     display: flex;
     flex-direction: row;
@@ -315,74 +254,70 @@ button:hover{
 }
 .payer {
     color: white;
-    background-color: #FF99C7;
-    font-size: 15px;
+    background-color: #C19A6B;
+    font-size: 16px;
     padding: 0 20px;
-    border-radius: 10px;
-    margin: 12px;
+    border-radius: 5px;
+    margin: 15px;
 }
 .payer:hover {
-    color: black;
-    background-color: #FF99C7;
+    background-color: #a77b50;
 }
-
 .total {
     display: flex;
     flex-direction: row;
     gap: 8px;
 }
-.total h4,
-.total h5{
-    color:  black;
+.total h4 {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
-
 input[type="checkbox"] {
     accent-color: black;
     margin: 0;
-  }
-  label {
+}
+label {
     gap: 5px;
     display: flex;
-  }
-/* formulaire de panier-fin */
+}
 
-/* formulaire de paiement_debut */
+/* formulaire de paiement */
 .Paiement form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-  }
+}
   
-  .Paiement input {
+.Paiement input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-  }
-  .Paiement h5{
+}
+.Paiement h5{
     font-size: 25px;
     font-family: "Abhaya Libre", serif;
     font-weight: 600;
     margin: 0;
-  }
-  .Paiement{
+}
+.Paiement{
     width: 400px;
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    padding: 25px;
+    border-radius:5px;
+    padding: 35px;
     position: relative;
-  }
+}
   
-  .Paiement button[type="submit"] {
+.Paiement button[type="submit"] {
     padding: 10px;
     background-color: #111;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  .authPaiement {
+}
+.authPaiement {
     position: fixed;
     top: 0;
     left: 0;
@@ -393,45 +328,38 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-  }
-  
-  .Paiement h2 {
+}
+.Paiement h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  
-  .Paiement input {
+}
+.Paiement input {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 14px;
     transition: border 0.2s;
-  }
-  
-  .Paiement input:focus {
-    border-color: #ff7f9c;
+}
+.Paiement input:focus {
+    border-color: #a77b50;
     outline: none;
     box-shadow: 0 0 5px #ffcbd9;
-  }
-  
-  .Paiement button[type="submit"] {
+}
+.Paiement button[type="submit"] {
     padding: 12px;
-    background-color: #FF99C7;
+    background-color: #C19A6B;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 17px;
     cursor: pointer;
     transition: background-color 0.2s;
-  }
-  
-  .Paiement button[type="submit"]:hover {
-    background-color: #333;
-  }
-  
+}
+.Paiement button[type="submit"]:hover {
+    background-color: #a77b50;
+}
 .Paiement .close-btn {
     position: absolute;
     right: 5px;
@@ -448,10 +376,7 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-  /* formulaire de paiement_fin */
-
-/* formulaire de favori_debut */
-
+/* formulaire de favori */
 .formulaire-Favori {
     position: fixed;
     top: 0;
@@ -463,25 +388,23 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    
 }
-  
 .Favori {
     width: 400px;
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
     padding: 20px;
     position: relative;
 }
 .active h5 {
     font-size: 25px;
     font-family: "Abhaya Libre", serif;
-    font-weight: 500;
+    font-weight: 600;
+    margin: 20px;
 }
 .img_fav {
    width: 120px;
-   height: 115px;
+   height: 130px;
    border-radius: 5px;
 }
 .info-article{
@@ -490,11 +413,15 @@ input[type="checkbox"] {
     margin: 0;
 }
 .info-article h4{
-    font-size: 15px;
-     margin: 0;
+    font-size: 18x;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0;
 }
 .info-article h6{
-    font-size: 15px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -510,92 +437,154 @@ input[type="checkbox"] {
     margin-top: 20px;
 }
 .ajouter button {
-    background-color: #ffeaf4;
-    color: black;
+    background-color: #C19A6B;
+    color: white;
     border: none;
     font-size: 18px;
     padding: 12px;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
     font-family: "Abhaya Libre", serif;
     font-weight: 600;
 }
 .ajouter button:hover{
-    color: white;
-    background-color: #FF99C7;
+    background-color: #a77b50;
 }
 
-/* formulaire de favori_fin */
-
-
-
-/* burger menu-debut */
-
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.burger-menu span {
-    height: 4px;
-    background: white;
-    border-radius: 2px;
-}
-
-/* burger menu-fin */
-
-h2 {
-    font-size: 65px;
-    text-align: center;
-    margin-top: 50px;
-    font-family: "Abhaya Libre", serif ;
-    font-weight: 100 ;
-}
-
-.image-principal img {
-    width: 90%;
-    height: 550px;
-    border-radius: 10px;
-  }
+/* Bienvenue */
 .image-principal{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.image-principal img{
+    width: 100%;
+    height: auto;
+    filter: brightness(0.6);     
+}
+.text-image h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+}
+.text-image h2{
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.text-image{
+    position: absolute;
+    top: 45%;
+    left: 50px;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 3;
+    max-width: 500px;
+}
+.text-image a{
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.text-image a:hover{
+    background-color: #C19A6B;
+    color: white;
+}
+
+/* Les avantages */
+.avantages {
     display: flex;
     justify-content: center;
+    padding: 50px;
+    gap: 50px;
 }
-
-h3 {
-    font-size: 35px;
-    text-align: center;
-    margin-top: 100px;
+.avantages img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.avantage h2 {
+    font-size: 20px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    margin: 0;
+}
+.avantage{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
 }
 
-.new img {
+/* Les nouveautes */
+main h2 {
+    font-size: 35px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+.nouveautes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    gap: 25px;
+}
+.produit {
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.produit:hover {
+  transform: scale(1.05); /* Agrandit légèrement */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre pour effet de "soulèvement" */
+}
+.produit img {
     width: 100%;
-    height: 350px;
-    border-radius: 10px;
+    height: 315px;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
 }
 
-.new{
-  display: grid;
-  flex-direction: row;
-  justify-content: center;
-  margin: 75px 0;
-  gap: 0 20px;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.collection {
-    margin: 0 50px;
+/* Affiche l'overlay */
+.produit:hover .overlay {
+    opacity: 1;
 }
 
-/* footer-debut */
-
+/* Footer */
 footer {
-    background-color: #FF99C7;
+    background-color: #5c5c5c;
     display: flex;
     align-items: center;
     height: 85px;
@@ -604,51 +593,40 @@ footer {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
-
 .contact a:hover {
-    color: black;
+    color: #C19A6B;
 }
-
 .contact {
     flex-direction: column;
     display: flex;
- }
-
+}
 .contact a {
     text-decoration: none;
     font-size: 17px;
     color: white;
 }
-
 .Réseaux-sociaux img{
-    width: 55px;
+    width: 50px;
     margin-top: 5px;
 }
-
 .Mentions img {
     position: relative;
     width: 160px;
 }
-
 .Mentions a {
     text-decoration: none;
     color: white;
 }
-
 .Mentions a:hover {
-    color: black;
+    color: #C19A6B;
 }
-
 .Mentions {
     flex-direction: column;
     display: flex;
     align-items: center;
 }
 
-/* footer-fin */
-
 /* version mobile */
-
 @media screen and (max-width: 768px){
     header {
         flex-direction: row;
@@ -656,115 +634,24 @@ footer {
         padding: 20px 10px;
     }
     .logo {
-        width: 140px;
+        width: 125px;
     }
-    .navigation img {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
+    .navigation ul{
+        display: none;
     }
-    .navigation ul li a {
-        display: flex;
-        gap: 8px;
-        font-size: 20px;
-        color: white;
-        cursor: pointer;
-    }
-    .navigation ul {
+    .nav {
         position: fixed;
-        top: 75px;
-        left: 5px;
-        background-color: #FF99C7;
-        width: 150px;
-        border-radius: 10px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        padding: 20px 10px;
-    }
-    .navigation ul li {
-        background-color: transparent;
-        padding: 2px 0;
-    }
-    .burger-menu {
+        bottom: 0;
+        background: white;
         display: flex;
-    }
-    .burger-menu span {
-        background-color: white;
-    }
-    .navigation {
-        display: none;
-        width: 100%;
-        background-color: #FF99C7;
-        overflow: hidden;
-        z-index: 1000;
-    }
-    .navigation.active {
-        display: block;
-    }
-    .menu-title {
-        display: block;
-        font-size: 20px;
-        color: white;
-    }
-    .supprimer {
-        display: none;
+        justify-content: center;
     }
     .icons img {
-        width: 40px;
-    }
-
-    .promotion {
-        padding: 10px;
-        height: 15px;
-        top: 70px;
-    }
-    h1 {
-        margin-top: -1px;
-        font-size: 12px;
-        text-align: center;
-    }
-
-
-    .Favori {
-        width: 300px;
-    }
-
-
-    h2 {
-        font-size: 25px;
-        margin: 30px;
-    }
-    .image-principal img {
-        height: 300px;
-    }
-    h3 {
-        font-size: 20px;
-        margin-top: 35px;
-    }
-
-    .new img {
-        width: 95%;
-        height: 235px;
-    }
-
-    .new {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 15px;
-        text-align: center;
-        margin: 35px 0;
-    } 
-
-    .collection {
-        margin: 0 25px;
+        width: 35px;
     }
     .formulaire {
         width: 300px;
     }
-
     .Panier {
         width: 320px;
     }
@@ -784,13 +671,68 @@ footer {
     .total h4, .total h5 {
         font-size: 14px;
     }
-      .btn {
+    .btn {
         font-size: 15px;
     }
     .Paiement {
         width: 300px;
     }
 
+/* Bienvenue */
+    .text-image h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .text-image h2 {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .text-image a {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+    .text-image {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 90%;
+    }
+/* Les avantages */
+    .avantages img{
+        width: 50px;
+        height: 50px;
+    }
+    .avantage h2{
+        font-size: 12px;
+    }
+    .avantages{
+        padding: 25px;
+        gap: 10px;
+    }
+    .avantage{
+        gap: 5px;
+    }
+/* Les nouveautés */
+    main h2{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .nouveautes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+        gap: 10px;
+        justify-items: center;
+    }
+    .produit img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .produit{
+        width: 100%;
+    }
+/* Footer */
     footer {
         height: 55px;
     }
@@ -800,141 +742,66 @@ footer {
     .contact a {
         font-size:10px ;   
      }
-     .Réseaux-sociaux img{
+    .Réseaux-sociaux img{
         width: 25px;
-     }
-     .Mentions a {
+    }
+    .Mentions a {
         font-size: 10px;
-     }
+    }
 }
 
 /* version tablette */
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    header {
-        flex-direction: row;
-        height: 30px;
-        gap: 10px;
-        padding: 20px 10px;
-    }
-    .logo{
-        width: 140px;
-    }
-    .navigation img {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-    }
-    .navigation ul li a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        font-size: 20px;
-        color: white;
-        text-align: center;
-        cursor: pointer;
-    }
-    .navigation ul {
-        margin: 0;
-        position: fixed;
-        top: 75px;
-        left: 5px;
-        background-color: #FF99C7;
-        width: 150px;
-        border-radius: 10px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        padding: 20px 10px;
-    }
-    .navigation ul li {
-        background-color: transparent;
-        padding: 2px 0;
-        
-    }
-    .burger-menu {
-        display: flex;
-    }
-    .burger-menu span {
-        background-color: white;
-    }
-    .navigation {
-        display: none;
-        width: 100%;
-        background-color: #FF99C7;
-        overflow: hidden;
-        z-index: 1000;
-    }
-    .navigation.active {
-        display: block;
-    }
 
-    .menu-title {
-        display: block;
-        font-family: "Poppins", sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        color: #FF99C7;
-        text-align: center;
+    .logo{
+        width: 155px;
     }
-    .supprimer {
-        display: none;
+    .navigation ul li a{
+        padding: 9px 30px;
+        font-size: 18px;
     }
     .icons img {
-        width: 40px;
+        width: 45px;
     }
-
-    .promotion {
-        padding: 10px;
-        height: 15px;
-        top: 70px;
+/* Bienvenue */
+    .text-image h1{
+        font-size: 30px;
+        margin-bottom: 8px;
     }
-    h1 {
-        font-size: 14px;
-        margin-top: -1px;
-        text-align: center;
+    .text-image h2{
+        font-size: 20px;
+        margin-bottom: 20px;
     }
-    
-    h2 {
-        font-size: 35px;
-        margin: 35px;
+    .text-image a{
+        padding: 10px 16px;
+        font-size: 13px;
     }
-    
-    .image-principal img {
-        height: 450px;
+/* Les avantages */
+    .avantage h2{
+        font-size: 16px;
     }
-
-    h3 {
-        font-size: 25px;
-        margin-top: 75px;
+/* Les nouveautés */
+    main h2 {
+        font-size: 25px
     }
-
-    .new img {
-        width: 100%;
-        height: 220px;
-
+    .nouveautes img{
+        height: 250px;
     }
-    
-    .new {
-        display: grid;
-        flex-direction: row;
-        justify-content: center;
-        margin: 75px 0;
-        gap: 0 20px;
-        align-items: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .produit {
+        width: 170px;
     }
-
-
+    .nouveautes{
+        gap: 15px;
+    }
+/* Footer */
     .Réseaux-sociaux img{
         width:45px ;
-     }
-     .Mentions img{
+    }
+    .Mentions img{
         width: 140px;
     }
      .Mentions a,
      .contact a {
         font-size:15px ;   
-     }
+    }
 }

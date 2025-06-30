@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Bienvenue chez Hijab el aifa | Foulards faits main avec élégance, style et confort">
+        <meta name="Auteur" content="Ouiam AHMIAN">
+        <title>Hijab el aifa | Foulards en vente</title>
+        <link rel="Icône" href="assets/images/mon-logo2.jpg">
+        <link rel="stylesheet" href="assets/css/produit.css">
+    </head>
+    <body>
+<!-- Header -->
+  <header>
+      <a href="index.html"><img class="logo" src="assets/images/Mon-logo.png" alt="logo principal de la marque"></a>
+        <nav class="navigation" id="nav-menu">
+            <ul>
+                <li><a href="index.html"> Accueil</a></li>
+                  <li><a href="catalog.html"> Catalogue</a></li>
+                        <li><a href="about.html">À propos</a></li>
+            </ul>
+        </nav>
+    <div class="icons">
+        <a class="supprimer" onclick="openFavori()"><img src="assets/images/prefere.png" alt="Icône de favoris"></a>
+            <a class="supprimer" onclick="openFormulaire()"><img src="assets/images/hijab.png" alt="Icône de connecter"></a>
+        <a onclick="openPanier()"><img src="assets/images/sac-de-courses.png" alt="Icône de panier"></a>
+    </div>
+  </header> 
+
+<!-- formulaire de connexion -->
+    <div id="authFormulaire" class="modal-overlay" style="display:none;">
+        <div class="formulaire">
+            <div class="tabs">
+                <div class="tab active" onclick="showForm('connecter')">Connexion</div>
+                <div class="tab" onclick="showForm('inscrire')">Inscription</div>
+            </div>
+
+                <form id="connecter" class="active">
+                    <input type="email" placeholder="E-mail" required>
+                        <input type="password" placeholder="Mot de passe" required>
+                    <button type="submit">CONNECTER</button>
+                </form>
+
+            <form id="inscrire">
+                <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Mot de passe" required>
+                        <input type="text" placeholder="Prénom" required>
+                        <input type="text" placeholder="Nom" required>
+                    <input type="tel" placeholder="+33 Téléphone" required>
+                <button type="submit">CRÉER UN COMPTE</button>
+            </form>
+      
+          <div class="close" onclick="closeFormulaire()">X</div>
+        </div>
+    </div>
+
+<!-- formulaire de panier -->
+  <div id="authPanier" class="formulaire-panier" style="display:none;">
+      <div class="Panier">
+          <form id="connecter" class="actives"></form>
+              <div class="panierPartager">
+                  <h5>Panier</h5>
+                  <img src="assets/images/partager.png" alt="Icône de partager">
+              </div>
+                  <div class="article">
+                    <input type="checkbox" class="product-checkbox">
+                      <img class="images" src="assets/images/foulard beige.jpg" alt="Foulard jersey premium en beige">
+                        <div class="text">
+                            <h6>Hijab jersey premium en beige</h6>
+                                  <div class="qualité">
+                                      <p>Quantité</p>
+                                      <button></button>
+                                  </div>
+                            <h4>28,99 EUR</h4>
+                        </div>
+                  </div>
+              <div class="article">
+                <input type="checkbox" class="product-checkbox">
+                 <img class="images" src="assets/images/foulard noire.jpg" alt="Foulard jersey premium en noire">
+                    <div class="text">
+                      <h6>Hijab jersey premium en noire</h6>
+                        <div class="qualité">
+                          <p>Quantité</p>
+                          <button></button>
+                        </div>
+                          <h4>25,99 EUR</h4>
+                    </div>
+              </div>
+      <div class="footer">
+          <label>
+            <input type="checkbox" id="selectAll">Tout
+          </label>
+            <div class="total">
+                <h4>54,98 EUR</h4>
+                <button class="payer">PAYER</button>
+            </div>
+        </div>
+        <div class="fermer" onclick="fermerPanier()">X</div>
+      </div>
+  </div>
+  
+<!-- formulaire de paiement -->
+  <div class="authPaiement" style="display: none;">
+    <div class="Paiement">
+      <h5>Formulaire de Paiement</h5>
+      <form>
+          <input type="text" placeholder="Nom complet" required>
+              <input type="email" placeholder="Email" required>
+                  <input type="text" placeholder="Adresse" required>
+                  <input type="text" placeholder="Numéro de carte" required>
+              <input type="text" placeholder="Date d’expiration (MM/AA)" required>
+          <input type="text" placeholder="CVV" required>
+        <button type="submit">Valider le paiement</button>
+      </form>
+      <div class="fermer" onclick="fermerPaiement()">X</div>
+    </div>
+  </div>
+
+<!-- formulaire de favori -->
+  <div id="authFavori" class="formulaire-Favori" style="display:none;">
+    <div class="Favori">
+      <form id="connecter" class="active">
+          <h5>Favoris :</h5>
+              <div class="article-fav">
+                <img class="img_fav" src="assets/images/foulard beige.jpg" alt="Foulard jersey premium en beige">
+                    <div class="info-article">
+                        <h6>Hijab jersey premium 
+                            en beige</h6>
+                        <h4>28,99 EUR</h4>
+                    </div>
+              </div>
+            <div class="article-fav">
+                <img class="img_fav" src="assets/images/foulard noire.jpg" alt="Foulard jersey premium en noire">
+                    <div class="info-article">
+                        <h6>Hijab jersey premium 
+                            en noire</h6>
+                        <h4>25,99 EUR</h4>
+                    </div>
+            </div>
+                  <div class="ajouter">
+                      <button >Ajouter au panier</button>
+                  </div>
+      </form>
+      <div class="fermer" onclick="fermerFavori()">X</div>
+    </div>
+  </div>
+
+<!-- main -->
+   <div class="produit-details">
+      <img id="image-produit" src="" alt="Image du produit">
+          <div class="produit_info">
+              <h1 id="titre-produit"></h1>
+                  <p id="description-produit"></p>
+                  <h2 id="prix-produit"></h2>
+              <button id="ajouter-panier">Ajouter au panier</button>
+          </div>
+    <!-- Les infos du produit seront injectées ici -->
+  </div>
+
+<!-- Footer -->
+  <footer>
+      <div class="contact">
+          <a href="tel:+342548658456">+342548658456</a>
+          <a href="mailto:hijab-el.aifa@hotmail.com">hijab-el.aifa@hotmail.com</a>
+      </div>
+          <div class="Mentions">
+              <a href="index.html"><img class="logo" src="assets/images/Mon-logo.png" alt="logo principal de la marque"></a>
+              <a href="Mentions.html">Mentions légales</a>
+          </div>
+      <div class="Réseaux-sociaux">
+          <a href="https://www.tiktok.com/@hijab_el_aifa1?_t=ZN-8vibQkBSz0I&_r=1"><img src="assets/images/tiktok.png" alt="Icône de tiktok"></a>
+              <a href="https://snapchat.com/t/ZislfCSH"><img src="assets/images/snapchat.png" alt="Icône de snap"></a>
+          <a href="https://www.instagram.com/hijab.el.aifa?igsh=MXJvZnRoN3Y1dDR6aw%3D%3D&utm_source=qr"><img src="assets/images/instagram(1).png" alt="Icône de instagram"></a>
+      </div>
+  </footer>
+      <script src="assets/js/produit.js"></script>
+</body>
+</html>
