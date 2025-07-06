@@ -11,7 +11,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px 8px 0px;
+    padding: 10px;
+    padding-left: 0;
     height: 80px;
     position: sticky;
     z-index: 1000;
@@ -466,7 +467,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-h3 {
+h2 {
     font-size: 25px;
     font-family: "Abhaya Libre", serif ;
     font-weight: 600 ;
@@ -539,24 +540,83 @@ footer {
     align-items: center;
 }
 
+   @media (max-width: 1024px){
+
+    .logo{
+        width: 155px;
+    }
+    .navigation ul li a{
+        padding: 8px 25px;
+        font-size: 18px;
+    }
+    .icons img {
+        width: 45px;
+    }
+/* montions légales */
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .regles {
+        margin: 40px;
+    }
+    p {
+        font-size: 17px;
+    }
+/* Footer */
+    .Réseaux-sociaux img{
+        width:45px ;
+    }
+    .Mentions img{
+        width: 140px;
+    }
+     .Mentions a,
+     .contact a {
+        font-size:15px ;   
+    }
+}
+
 /* version mobile */
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     header {
         flex-direction: row;
         height: 30px;
-        padding: 20px 10px;
     }
     .logo {
-        width: 140px;
+        width: 125px;
     }
-
-    .icons img {
-        width: 40px;
+    .navigation ul {
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        background-color: #ffffff;
     }
+    .navigation ul li {
+        padding: 7px 0;
+        display: flex;
+        justify-content: center;
+        border-top:3px solid #a77b50;
+    }
+    .navigation ul li a {
+        padding:0;
+    }
+    .navigation {
+        display: block;
+        top: 0;
+    }
+/* formulaire-panier */
     .formulaire {
         width: 300px;
     }
-
     .Panier {
         width: 320px;
     }
@@ -582,24 +642,26 @@ footer {
     .Paiement {
         width: 300px;
     }
-
+/* mentions légales */
     h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
     .regles {
-        margin: 40px;
+        margin: 30px;
         border-radius: 15px;
     }
-    h3 {
-        font-size: 17px;
+    h2 {
+        font-size: 16px;
     }
     p {
-        font-size: 14px;
+        font-size: 13px;
     }
     
     /* Footer */
     footer {
         height: 55px;
+        margin-bottom: 30px;
+        padding: 8px 10px;
     }
     .Mentions img {
         display: none;
@@ -613,46 +675,7 @@ footer {
     .Mentions a {
         font-size: 10px;
     }
-    }
+}
 
 
-    @media screen and (min-width: 768px) and (max-width: 1024px){
-
-        .logo{
-        width: 155px;
-    }
-    .navigation ul li a{
-        padding: 9px 30px;
-        font-size: 18px;
-    }
-    .icons img {
-        width: 45px;
-    }
-        h2 {
-            font-size: 14px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 30px;
-        }
-        .regles {
-            margin: 40px;
-        }
-        h3 {
-            font-size: 20px;
-        }
-        p {
-            font-size: 17px;
-        }
-        /* Footer */
-    .Réseaux-sociaux img{
-        width:45px ;
-    }
-    .Mentions img{
-        width: 140px;
-    }
-     .Mentions a,
-     .contact a {
-        font-size:15px ;   
-    }
-    }
+ 

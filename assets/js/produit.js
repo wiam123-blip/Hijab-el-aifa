@@ -109,7 +109,7 @@ function showArticle(formId) {
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 
-fetch('produits.json')
+fetch('assets/json/produits.json')
   .then(response => response.json())
   .then(data => {
     const produit = data.produits.find(p => p.id == id);

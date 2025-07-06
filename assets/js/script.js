@@ -109,14 +109,14 @@ function showArticle(formId) {
 
 // ---------- CATALOGUE ----------
 
-fetch('produits.json')
+fetch('assets/json/produits.json')
     .then(response => response.json())
     .then(data => {
         const produits = data.produits;
         const container = document.getElementById('catalogue-container');
 
         produits.forEach(produit => {
-            const div = document.createElement('div');
+            const div = document. createElement('div');
             div.className = 'produit';
 
             div.innerHTML = `

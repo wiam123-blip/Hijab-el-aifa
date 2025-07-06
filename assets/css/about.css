@@ -11,7 +11,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px 8px 0px;
+    padding: 10px;
+    padding-left: 0;
     height: 80px;
     position: sticky;
     z-index: 1000;
@@ -480,7 +481,7 @@ h1 {
     display: none; /* Masquer par défaut */
     align-items: center;
     gap: 35px;
-    padding: 20px;
+    padding: 30px;
 }
 .slide.active {
     display: flex; /* Afficher seulement celle avec la classe active */
@@ -521,10 +522,10 @@ h1 {
   height: 32px;
 }
 .prev {
-  left: 10px;
+  left: 5px;
 }
 .next {
-  right: 10px;
+  right: 5px;
 }
 
 /* Footer */
@@ -579,28 +580,102 @@ footer {
     align-items: center;
 }
 
+ /* version tablette  */
+@media(max-width: 1024px){
+    .logo{
+        width: 155px;
+    }
+    .navigation ul li a{
+        padding: 8px 25px;
+        font-size: 18px;
+    }
+    .icons img {
+        width: 45px;
+    }
+/* a propos de nous */
+    h1 {
+        font-size: 25px;
+    }
+    .slider-controls button {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+    .carousel-container{
+        max-width: 90%;
+        margin: 30px auto;
+    }
+    .slide-text h2 {
+        font-size: 25px;
+    }
+    .slide-text p {
+        font-size: 14px;
+    }
+    .next {
+    right: 5px;
+    }
+    .prev {
+    left: 5px;
+    }
+    .slide{
+        gap: 15px;
+        padding: 35px;
+    }
+
+/* Footer */
+    .Réseaux-sociaux img{
+        width:45px ;
+    }
+    .Mentions img{
+        width: 140px;
+    }
+     .Mentions a,
+     .contact a {
+        font-size:15px ;   
+    }
+}
+
 /* version mobile */
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     header {
         flex-direction: row;
         height: 30px;
-        padding: 20px 10px;
     }
     .logo {
-        width: 140px;
+        width: 125px;
     }
-    .navigation ul{
-        display: none;
+    .navigation ul {
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        background-color: #ffffff;
     }
-
+    .navigation ul li {
+        padding: 7px 0;
+        display: flex;
+        justify-content: center;
+        border-top:3px solid #a77b50;
+    }
+    .navigation ul li a {
+        padding:0;
+    }
+    .navigation {
+        display: block;
+        top: 0;
+    }
     .icons img {
-        width: 40px;
+        width: 35px;
     }
-
+/* formulaire */
     .formulaire {
         width: 300px;
     }
-
     .Panier {
         width: 320px;
     }
@@ -626,25 +701,47 @@ footer {
     .Paiement {
         width: 300px;
     }
-
     h1, h3 {
         font-size: 20px;
         margin: 25px;
     }
 /* a propos de nous */
+    .carousel-container {
+        max-width: 85%;
+        margin: 20px auto;
+    }
     .slide.active {
         display: grid;
+        place-items: center;
+    }
+    .slide{
+        gap: 5px;
+        padding: 15px;
+    }
+    .slide-text h2 {
+        font-size: 20px;
+    }
+    .slide-text p {
+         font-size: 12px;
+    }
+    .slide-text {
+        width: 100%;
+    }
+    .next{
+        /* right: 5px; */
     }
 /* Footer */
     footer {
         height: 55px;
+        margin-bottom: 30px;
+        padding: 8px 10px;
     }
     .Mentions img {
         display: none;
     }
     .contact a {
         font-size:10px ;   
-     }
+    }
     .Réseaux-sociaux img{
         width: 25px;
     }
@@ -653,52 +750,5 @@ footer {
     }
 }
 
-/* version tablette */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
-    .logo{
-        width: 155px;
-    }
-    .navigation ul{
-        display: none;
-    }
-    .icons img {
-        width: 45px;
-    }
-
-    h1, h3 {
-        font-size: 25px;
-        margin: 35px 35px 0px 35px;
-    }
-    .a-propos {
-        margin: 35px 80px;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 25px;
-    }
-    .a-propos img {
-        width: 500px;
-        height: 400px;
-    }
-    p {
-        font-size: 15px;
-    }
-
-  .slider-controls button {
-    font-size: 16px;
-    padding: 6px 10px;
-
-/* Footer */
-    .Réseaux-sociaux img{
-        width:45px ;
-    }
-    .Mentions img{
-        width: 140px;
-    }
-     .Mentions a,
-     .contact a {
-        font-size:15px ;   
-    }
-}
 
 

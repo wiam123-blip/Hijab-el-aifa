@@ -11,7 +11,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px 8px 0px;
+    padding: 10px;
+    padding-left: 0;
     height: 80px;
     position: sticky;
     z-index: 1000;
@@ -626,26 +627,99 @@ footer {
     align-items: center;
 }
 
+
+/* version tablette */
+@media (max-width: 1024px) {
+    .logo{
+        width: 155px;
+    }
+    .navigation ul li a{
+        padding: 8px 25px;
+        font-size: 18px;
+    }
+    .icons img {
+        width: 45px;
+    }
+/* Bienvenue */
+    .text-image h1{
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    .text-image h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .text-image a{
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+/* Les avantages */
+    .avantage h2{
+        font-size: 16px;
+    }
+/* Les nouveautés */
+    main h2 {
+        font-size: 25px
+    }
+    .nouveautes img{
+        height: 250px;
+    }
+    .produit {
+        width: 170px;
+    }
+    .nouveautes{
+        gap: 15px;
+    }
+/* Footer */
+    .Réseaux-sociaux img{
+        width:45px ;
+    }
+    .Mentions img{
+        width: 140px;
+    }
+     .Mentions a,
+     .contact a {
+        font-size:15px ;   
+    }
+}
+
+
 /* version mobile */
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     header {
         flex-direction: row;
         height: 30px;
-        padding: 20px 10px;
     }
     .logo {
         width: 125px;
     }
-    .navigation ul{
-        display: none;
-    }
-    .nav {
+    .navigation ul {
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         position: fixed;
+        left: 0;
         bottom: 0;
-        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        background-color: #ffffff;
+    }
+    .navigation ul li {
+        padding: 7px 0;
         display: flex;
         justify-content: center;
+        border-top:3px solid #a77b50;
     }
+    .navigation ul li a {
+        padding:0;
+    }
+    .navigation {
+        display: block;
+        top: 0;
+    }
+/* formulaire-panier */
     .icons img {
         width: 35px;
     }
@@ -721,8 +795,10 @@ footer {
     .nouveautes{
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
-        gap: 10px;
+        row-gap: 15px;
+        column-gap: 15px;
         justify-items: center;
+        padding: 27px;
     }
     .produit img{
         width: 100%;
@@ -735,6 +811,8 @@ footer {
 /* Footer */
     footer {
         height: 55px;
+        margin-bottom: 30px;
+        padding: 8px 10px;
     }
     .Mentions img {
         display: none;
@@ -750,58 +828,4 @@ footer {
     }
 }
 
-/* version tablette */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .logo{
-        width: 155px;
-    }
-    .navigation ul li a{
-        padding: 9px 30px;
-        font-size: 18px;
-    }
-    .icons img {
-        width: 45px;
-    }
-/* Bienvenue */
-    .text-image h1{
-        font-size: 30px;
-        margin-bottom: 8px;
-    }
-    .text-image h2{
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .text-image a{
-        padding: 10px 16px;
-        font-size: 13px;
-    }
-/* Les avantages */
-    .avantage h2{
-        font-size: 16px;
-    }
-/* Les nouveautés */
-    main h2 {
-        font-size: 25px
-    }
-    .nouveautes img{
-        height: 250px;
-    }
-    .produit {
-        width: 170px;
-    }
-    .nouveautes{
-        gap: 15px;
-    }
-/* Footer */
-    .Réseaux-sociaux img{
-        width:45px ;
-    }
-    .Mentions img{
-        width: 140px;
-    }
-     .Mentions a,
-     .contact a {
-        font-size:15px ;   
-    }
-}

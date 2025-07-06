@@ -11,7 +11,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px 8px 0px;
+    padding: 10px;
+    padding-left: 0;
     height: 80px;
     position: sticky;
     z-index: 1000;
@@ -551,21 +552,72 @@ footer {
     align-items: center;
 }
 
+/* version tablette */
+@media (max-width: 1024px){
+
+    .logo{
+        width: 155px;
+    }
+    .navigation ul li a{
+        padding: 9px 30px;
+        font-size: 18px;
+    }
+    .icons img {
+        width: 45px;
+    }
+
+/* Footer */
+    .Réseaux-sociaux img{
+        width:45px ;
+    }
+    .Mentions img{
+        width: 140px;
+    }
+     .Mentions a,
+     .contact a {
+        font-size:15px ;   
+    }
+}
+
 /* version mobile */
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     header {
         flex-direction: row;
         height: 30px;
-        padding: 20px 10px;
     }
     .logo {
-        width: 140px;
+        width: 125px;
     }
-
+    .navigation ul {
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        background-color: #ffffff;
+    }
+    .navigation ul li {
+        padding: 7px 0;
+        display: flex;
+        justify-content: center;
+        border-top:3px solid #a77b50;
+    }
+    .navigation ul li a {
+        padding:0;
+    }
+    .navigation {
+        display: block;
+        top: 0;
+    }
     .icons img {
-        width: 40px;
+        width: 35px;
     }
-
+/* .formulaire-panier */
     .formulaire {
         width: 300px;
     }
@@ -600,13 +652,14 @@ footer {
 /* Footer */
     footer {
         height: 55px;
+        margin-bottom: 30px;
     }
     .Mentions img {
         display: none;
     }
     .contact a {
         font-size:10px ;   
-     }
+    }
     .Réseaux-sociaux img{
         width: 25px;
     }
@@ -614,33 +667,4 @@ footer {
         font-size: 10px;
     }
 }
-
-/* version tablette */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
-    .logo{
-        width: 155px;
-    }
-    .navigation ul li a{
-        padding: 9px 30px;
-        font-size: 18px;
-    }
-    .icons img {
-        width: 45px;
-    }
-
-/* Footer */
-    .Réseaux-sociaux img{
-        width:45px ;
-    }
-    .Mentions img{
-        width: 140px;
-    }
-     .Mentions a,
-     .contact a {
-        font-size:15px ;   
-    }
-}
-
-
 

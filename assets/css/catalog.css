@@ -11,7 +11,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px 8px 0px;
+    padding: 10px;
+    padding-left: 0;
     height: 80px;
     position: sticky;
     z-index: 1000;
@@ -452,6 +453,8 @@ label {
 /* main */
 main{
     padding: 35px;
+    width: 100%;
+    box-sizing: border-box;
 }
 main h1 {
     font-size:35px;
@@ -460,17 +463,18 @@ main h1 {
     text-align: center;
     margin: 0;
     margin-bottom: 30px;
-    
 }
 .produit {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 500;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px;
-  width: 250px;
-  background-color: white;
-  box-shadow:0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 85%;
+    height: 95%;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .produit p {
     font-size: 18px;
@@ -486,7 +490,7 @@ main h1 {
     margin: 0;
 }
 .produit img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 5px;
 }
 .produit button {
@@ -501,20 +505,15 @@ main h1 {
   background-color: #a77b50;
 }
 #catalogue-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+    column-gap: 15px;
+    place-items: center;
 }
-.produit{
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .produit:hover {
   transform: scale(1.05); /* Agrandit légèrement */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre pour effet de "soulèvement" */
 }
-
 
 /* Footer */
 footer {
@@ -560,18 +559,82 @@ footer {
     align-items: center;
 }
 
+
+/* version tablette */
+@media (max-width: 1024px){
+
+    .logo{
+        width: 155px;
+    }
+    .navigation ul li a{
+        padding: 8px 25px;
+        font-size: 18px;
+    }
+    .icons img {
+        width: 45px;
+    }
+/* catalogue */
+    main h1 {
+        font-size: 25px;
+    }
+    #catalogue-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+    }
+    .produit h3 {
+        font-size: 13px;
+    }
+    .produit p {
+        font-size: 15px;
+    }
+ 
+/* Footer */
+    .Réseaux-sociaux img{
+        width:45px ;
+    }
+    .Mentions img{
+        width: 140px;
+    }
+     .Mentions a,
+     .contact a {
+        font-size:15px ;   
+    }
+    }
+
 /* version mobile */
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     header {
         flex-direction: row;
         height: 30px;
-        padding: 20px 10px;
     }
     .logo {
         width: 125px;
     }
-    .navigation ul{
-        display: none;
+    .navigation ul {
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        background-color: #ffffff;
+    }
+    .navigation ul li {
+        padding: 7px 0;
+        display: flex;
+        justify-content: center;
+        border-top:3px solid #a77b50;
+    }
+    .navigation ul li a {
+        padding:0;
+    }
+    .navigation {
+        display: block;
+        top: 0;
     }
     .icons img {
         width: 35px;
@@ -608,12 +671,16 @@ footer {
  /* catalogue */
     main h1{
         font-size: 20px;
+    } 
+    #catalogue-container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 35px;
     }
     .produit{
-        width: 120px;
+        width: 80%;
     }
-    #catalogue-container{
-        gap: 16px;
+    main {
+        padding: 25px;
     }
     .produit h3{
         font-size: 10px;
@@ -624,13 +691,15 @@ footer {
 /* Footer */
     footer {
         height: 55px;
+        margin-bottom: 30px;
+        padding: 8px 10px;
     }
     .Mentions img {
         display: none;
     }
     .contact a {
         font-size:10px ;   
-    }
+     }
     .Réseaux-sociaux img{
         width: 25px;
     }
@@ -639,45 +708,3 @@ footer {
     }
 }
 
-/* version tablette */
-@media screen and (min-width:768px) and (max-width: 1024px){
-
-    .logo{
-        width: 155px;
-    }
-    .navigation ul li a{
-        padding: 9px 30px;
-        font-size: 18px;
-    }
-    .icons img {
-        width: 45px;
-    }
-/* catalogue */
-    main h1{
-        font-size: 25px;
-    }
-    .produit{
-        width: 185px;
-    }
-    #catalogue-container{
-        gap: 20px;
-    }
-    .produit h3 {
-        font-size: 13px;
-    }
-    .produit p {
-        font-size: 15px;
-    }
- 
-/* Footer */
-    .Réseaux-sociaux img{
-        width:45px ;
-    }
-    .Mentions img{
-        width: 140px;
-    }
-     .Mentions a,
-     .contact a {
-        font-size:15px ;   
-    }
-    }
