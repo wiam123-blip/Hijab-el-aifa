@@ -617,6 +617,11 @@ footer {
     .icons img {
         width: 35px;
     }
+/* formulaire de favori */
+.Favori {
+  width: 335px;
+  padding: 16px;
+}
 /* .formulaire-panier */
     .formulaire {
         width: 300px;
@@ -646,6 +651,28 @@ footer {
     }
     .Paiement {
         width: 300px;
+    }
+    .produit-details {
+        display: grid;
+        gap: 5px;
+        padding: 35px;
+        place-items: center;
+    }
+    .produit_info h1 {
+        font-size: 16px;
+    }
+    .produit_info p {
+        font-size: 12px;
+    }
+    .produit_info h2 {
+        font-size: 14px;
+    }
+    button{
+        padding: 10px;
+    }
+    .produit_info button {
+        margin-top: 16px;
+        font-size: 13px;
     }
 
 
