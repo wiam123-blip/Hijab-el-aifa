@@ -107,8 +107,7 @@ function showArticle(formId) {
 }
 
 
-// ---------- CATALOGUE ----------
-
+//CATALOGUE 
 fetch('assets/json/produits.json')
     .then(response => response.json())
     .then(data => {
@@ -133,7 +132,7 @@ fetch('assets/json/produits.json')
     });
 
 
-// ---------- CARROUSEL DE SLIDES ----------
+//CARROUSEL
 
 document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
@@ -154,6 +153,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showSlide(currentIndex);
 
-    // Expose la fonction au scope global si utilisation de onclick inline
     window.changeSlide = changeSlide;
 });

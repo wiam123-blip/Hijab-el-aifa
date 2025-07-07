@@ -18,11 +18,9 @@ header {
     z-index: 1000;
     top: 0;
 }
-
 .logo {
     width: 200px;
 }
-
 .navigation ul {
     list-style: none;
     display: flex;
@@ -512,8 +510,6 @@ label {
 }
 .avantages img {
     width: 100px;
-    height: 100px;
-    display: block;
 }
 .avantage h2 {
     font-size: 20px;
@@ -526,7 +522,6 @@ label {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 10px;
 }
 
 /* Les nouveautes */
@@ -694,10 +689,7 @@ footer {
         width: 125px;
     }
     .navigation ul {
-        list-style: none;
         width: 100%;
-        justify-content: center;
-        align-items: center;
         position: fixed;
         left: 0;
         bottom: 0;
@@ -715,10 +707,7 @@ footer {
     .navigation ul li a {
         padding:0;
     }
-    .navigation {
-        display: block;
-        top: 0;
-    }
+    
 /* formulaire-panier */
     .icons img {
         width: 35px;
