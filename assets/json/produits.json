@@ -4,7 +4,7 @@
       "id": 1,
       "titre": "Foulard jersey premium en Marron terre",
       "image": "assets/images/foulard marron.jpg",
-      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "description": "Foulard unique avec des strass faits main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
       "prix": "23,70 EUR"
     },
     {
@@ -18,7 +18,7 @@
       "id": 3,
       "titre": "Foulard jersey premium en Rouge Bordeaux",
       "image": "assets/images/foulard bordeaux.jpg",
-      "description": "Accessoire unique confectionné à la main, ce foulard à strass apporte une élégance discrète idéale pour toutes les occasions.",
+      "description": "Accessoire unique confectionné à la main, ce foulard à strass apporte une élégance discrète, idéale pour toutes les occasions.",
       "prix": "23,70 EUR"
     },
     {
@@ -39,21 +39,21 @@
       "id": 6,
       "titre": "Foulard jersey premium en Violet doux",
       "image": "assets/images/foulard violet.png",
-      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "description": "Foulard unique avec des strass faits main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
       "prix": "25,70 EUR"
     },
     {
       "id": 7,
       "titre": "Foulard jersey premium en Rose foncé",
       "image": "assets/images/foulard rose.jpg",
-      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "description": "Foulard unique avec des strass faits main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
       "prix": "23,70 EUR"
     },
     {
       "id": 8,
       "titre": "Foulard jersey premium en Orange lumineux",
       "image": "assets/images/foulard orange.jpg",
-      "description": "Foulard unique avec des strass fait main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
+      "description": "Foulard unique avec des strass faits main, il est idéal pour un usage quotidien tout en apportant une touche raffinée.",
       "prix": "22,50 EUR"
     }
     

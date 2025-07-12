@@ -18,7 +18,7 @@ function showForm(formId) {
 }
 
 
-// ---------- FORMULAIRE PANIER ----------
+//FORMULAIRE PANIER
 
 function openPanier() {
     document.getElementById('authPanier').style.display = 'flex';
@@ -29,7 +29,7 @@ function fermerPanier() {
 }
 
 function showPanier(formId) {
-    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));  // corrigé 'actives' en 'active'
+    document.querySelectorAll('form').forEach(f => f.classList.remove('active')); 
     const form = document.getElementById(formId);
     if (form) form.classList.add('active');
 
@@ -39,7 +39,7 @@ function showPanier(formId) {
 }
 
 
-// ---------- CHECKBOX "TOUT SÉLECTIONNER" ----------
+//CHECKBOX
 
 document.addEventListener('DOMContentLoaded', () => {
     const selectAllCheckbox = document.getElementById('selectAll');
@@ -77,12 +77,12 @@ function showFavori(formId) {
 
 document.querySelector('.payer')?.addEventListener('click', function () {
     document.querySelector('.authPaiement').style.display = 'flex';
-    document.querySelector('.formulaire-panier').style.display = 'none'; // Masquer le panier
+    document.querySelector('.formulaire-panier').style.display = 'none'; 
 });
 
 function fermerPaiement() {
-    document.querySelector('.authPaiement').style.display = 'none'; // Cacher le paiement
-    document.querySelector('.formulaire-panier').style.display = 'flex'; // Réafficher le panier
+    document.querySelector('.authPaiement').style.display = 'none';
+    document.querySelector('.formulaire-panier').style.display = 'flex'; 
 }
 
 

@@ -116,7 +116,6 @@ fetch('assets/json/produits.json')
 
     if (produit) {
       document.getElementById('image-produit').src = produit.image;
-      document.getElementById('image-produit').alt = produit.titre;
       document.getElementById('titre-produit').textContent = produit.titre;
       document.getElementById('prix-produit').textContent = produit.prix;
       document.getElementById('description-produit').textContent = produit.description;
@@ -126,4 +125,6 @@ fetch('assets/json/produits.json')
   })
   .catch(error => {
     console.error('Erreur JSON :', error);
+    
   });
+  

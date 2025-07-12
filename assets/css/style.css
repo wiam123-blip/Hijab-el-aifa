@@ -99,6 +99,13 @@ input {
     margin-bottom: 15px;
     font-size: 14px;
 }
+input {
+    transition: border 0.3s ease;
+}
+
+input.champ-vide {
+    border: 2px solid red;
+}
 input:focus {
     outline: none;
     box-shadow: 0 0 5px #a77b50;
@@ -525,7 +532,7 @@ label {
 }
 
 /* Les nouveautes */
-main h2 {
+ h3 {
     font-size: 35px;
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
@@ -653,7 +660,7 @@ footer {
         font-size: 16px;
     }
 /* Les nouveautés */
-    main h2 {
+    h3 {
         font-size: 25px
     }
     .nouveautes img{
@@ -777,7 +784,7 @@ footer {
         gap: 5px;
     }
 /* Les nouveautés */
-    main h2{
+    h3{
         font-size: 16px;
         margin-top: 10px;
     }

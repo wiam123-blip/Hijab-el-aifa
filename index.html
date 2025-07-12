@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" content="Bienvenue chez Hijab El Aïfa | Foulards faits main avec élégance, style et confort">
+        <meta name="Description" content="Bienvenue chez Hijab El Aïfa | Boutique en ligne de foulards faits main avec élégance, style et confort">
         <meta name="Auteur" content="Ouiam AHMIAN">
         <title>Hijab El Aïfa | Boutique en ligne de foulards faits main</title>
-        <link rel="Icône" href="assets/images/Favicon.png">
+        <link rel="icon" href="assets/images/Favicon.png">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
@@ -22,38 +22,38 @@
                 </ul>
             </nav>
         <div class="icons">
-            <a onclick="openFavori()"><img src="assets/images/prefere.png" alt="Icône de favoris"></a>
-                <a onclick="openFormulaire()"><img src="assets/images/hijab.png" alt="Icône de connecter"></a>
+            <a onclick="openFavori()"><img src="assets/images/prefere.png" alt="Icône de favori"></a>
+                <a onclick="openFormulaire()"><img src="assets/images/hijab.png" alt="Icône de connexion"></a>
             <a onclick="openPanier()"><img src="assets/images/sac-de-courses.png" alt="Icône de panier"></a>
         </div>
   </header> 
 
 <!-- formulaire de connexion -->
-    <div id="authFormulaire" class="modal-overlay" style="display:none;">
-        <div class="formulaire">
-            <div class="tabs">
-                <div class="tab active" onclick="showForm('connecter')">Connexion</div>
-                <div class="tab" onclick="showForm('inscrire')">Inscription</div>
-            </div>
-
-                <form id="connecter" class="active">
-                    <input type="email" placeholder="E-mail" required>
-                        <input type="password" placeholder="Mot de passe" required>
-                    <button type="submit">CONNECTER</button>
-                </form>
-
-            <form id="inscrire">
-                <input type="email" placeholder="E-mail" required>
-                    <input type="password" placeholder="Mot de passe" required>
-                        <input type="text" placeholder="Prénom" required>
-                        <input type="text" placeholder="Nom" required>
-                    <input type="tel" placeholder="+33 Téléphone" required>
-                <button type="submit">CRÉER UN COMPTE</button>
-            </form>
-      
-          <div class="close" onclick="closeFormulaire()">X</div>
+<div id="authFormulaire" class="modal-overlay" style="display:none;">
+    <div class="formulaire">
+        <div class="tabs">
+            <div class="tab active" onclick="showForm('connecter')">Connexion</div>
+            <div class="tab" onclick="showForm('inscrire')">Inscription</div>
         </div>
+
+        <form id="connecter" class="active">
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Mot de passe">
+            <button type="submit">CONNECTER</button>
+        </form>
+
+        <form id="inscrire">
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Mot de passe">
+            <input type="text" placeholder="Prénom">
+            <input type="text" placeholder="Nom">
+            <input type="tel" placeholder="+33 Téléphone" >
+            <button type="submit">CRÉER UN COMPTE</button>
+        </form>
+
+        <div class="close" onclick="closeFormulaire()">X</div>
     </div>
+</div>
 
 <!-- formulaire de panier -->
   <div id="authPanier" class="formulaire-panier" style="display:none;">
@@ -148,7 +148,7 @@
         <img src="assets/images/image-principal.jpg" alt="Image d'une femme portant un foulard">
             <div class="text-image">
                 <h1>Foulard Hijab El Aïfa </h1>
-                    <h2>Des créations fait main qui racontent <br> votre histoire</h2>
+                    <h2>Des créations faites main qui racontent <br> votre histoire</h2>
                 <a href="catalog.html">Voir la collection</a>
             </div>
     </div>
@@ -156,7 +156,7 @@
     <section class="avantages">
         <div class="avantage">
             <img src="assets/images/livraison gratuite.png" alt="icone livraison gratuite">
-            <h2>Expéditon gratuite partout <br> en France</h2>
+            <h2>Expédition gratuite partout <br> en France</h2>
         </div>
             <div class="avantage">
                 <img src="assets/images/package-box.png" alt="icone emballage soigné">
@@ -167,9 +167,9 @@
             <h2>Disponible à tout instant <br> pour vous répondre</h2>
         </div>
     </section>
+
 <!-- Les Nouveautés  -->
-  <main>
-      <h2>Les Nouveautés</h2>
+      <h3>Les Nouveautés</h3>
           <div class="nouveautes">
               <div class="produit">
                     <a href="produit.html?id=1">
@@ -196,12 +196,11 @@
                 </a>
               </div>
           </div>
-  </main>
 
 <!-- Footer -->
   <footer>
         <div class="contact">
-            <a href="tel:+342548658456">+342548658456</a>
+            <a href="tel:+33748658456">+33748658456</a>
             <a href="mailto:hijab-el.aifa@hotmail.com">hijab-el.aifa@hotmail.com</a>
         </div>
             <div class="Mentions">
