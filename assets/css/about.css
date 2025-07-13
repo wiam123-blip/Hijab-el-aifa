@@ -113,20 +113,7 @@ input:focus {
     color: #666;
     margin-bottom: 20px;
 }
-.inscrire button {
-    background-color: #C19A6B;
-    color: white;
-    border: none;
-    font-size: 16px;
-    padding: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: "Abhaya Libre", serif;
-    font-weight: 600;
-}
-.inscrire button:hover{
-    background-color: #a77b50;
-}
+
 .close:hover{
     color: rgba(108, 108, 108);
     border: 1px solid rgba(108, 108, 108);
@@ -146,6 +133,20 @@ input:focus {
     border: 1px solid rgba(108, 108, 108, 0.2);
     cursor: pointer;
 }
+button:hover {
+  background-color: #a77b50;
+}
+button {
+  background-color: #C19A6B;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+}
 
 /* formulaire de panier */
 .formulaire-panier {
@@ -163,7 +164,7 @@ input:focus {
 .Panier {
     width: 400px;
     background: white;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     padding: 0 25px;
     position: relative;
@@ -604,6 +605,9 @@ footer {
         max-width: 90%;
         margin: 30px auto;
     }
+    .slide img {
+        width: 235px;
+    }
     .slide-text h2 {
         font-size: 25px;
     }
@@ -611,10 +615,10 @@ footer {
         font-size: 14px;
     }
     .next {
-    right: 5px;
+        right: 5px;
     }
     .prev {
-    left: 5px;
+        left: 5px;
     }
     .slide{
         gap: 15px;
@@ -704,6 +708,9 @@ footer {
     h1, h3 {
         font-size: 20px;
         margin: 25px;
+    }
+    .Favori {
+        width: 300px;
     }
 /* a propos de nous */
     .carousel-container {

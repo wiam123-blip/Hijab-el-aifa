@@ -163,7 +163,7 @@ button:hover{
 .Panier {
     width: 400px;
     background: white;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     padding: 0 25px;
     position: relative;
@@ -495,10 +495,7 @@ label {
   margin-top: 20px;
   font-size: 16px;
 }
-.produit_info button:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
-}
+
 
 /* Footer */
 footer {
@@ -618,10 +615,9 @@ footer {
         width: 35px;
     }
 /* formulaire de favori */
-.Favori {
-  width: 335px;
-  padding: 16px;
-}
+    .Favori {
+        width: 300px;
+    }
 /* .formulaire-panier */
     .formulaire {
         width: 300px;

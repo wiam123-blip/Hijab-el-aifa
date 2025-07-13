@@ -162,7 +162,7 @@ button:hover{
 .Panier {
     width: 400px;
     background: white;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     padding: 0 25px;
     position: relative;
@@ -640,6 +640,9 @@ footer {
         font-size: 15px;
     }
     .Paiement {
+        width: 300px;
+    }
+    .Favori {
         width: 300px;
     }
 /* mentions légales */
