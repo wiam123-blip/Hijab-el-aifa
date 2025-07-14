@@ -1,45 +1,45 @@
 
 function openFormulaire() {
-    document.getElementById('authFormulaire').style.display = 'flex';
+    document.getElementById('authFormulaire').style.display = 'flex';//affiche le formulaire
 }
 
 function closeFormulaire() {
-    document.getElementById('authFormulaire').style.display = 'none';
+    document.getElementById('authFormulaire').style.display = 'none';//cache le formulaire
 }
 
 function showForm(formId) {
-    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));
+    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));//désactive tous les formulaire
     const form = document.getElementById(formId);
     if (form) form.classList.add('active');
 
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    const tab = document.querySelector(`.tab[onclick*="${formId}"]`);
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));//désactive tous les onglets
+    const tab = document.querySelector(`.tab[onclick*="${formId}"]`);//cherche l'onglet tab
     if (tab) tab.classList.add('active');
 }
 
 
-// ---------- FORMULAIRE PANIER ----------
+//FORMULAIRE PANIER
 
 function openPanier() {
-    document.getElementById('authPanier').style.display = 'flex';
+    document.getElementById('authPanier').style.display = 'flex';//affiche le formulaire
 }
 
 function fermerPanier() {
-    document.getElementById('authPanier').style.display = 'none';
+    document.getElementById('authPanier').style.display = 'none';//cache le formulaire
 }
 
 function showPanier(formId) {
-    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));  // corrigé 'actives' en 'active'
+    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));  //désactive tous les formulaire
     const form = document.getElementById(formId);
     if (form) form.classList.add('active');
 
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    const tab = document.querySelector(`.tab[onclick*="${formId}"]`);
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));//désactive tous les onglets
+    const tab = document.querySelector(`.tab[onclick*="${formId}"]`);//cherche l'onglet tab
     if (tab) tab.classList.add('active');
 }
 
 
-// ---------- CHECKBOX "TOUT SÉLECTIONNER" ----------
+//CHECKBOX
 
 document.addEventListener('DOMContentLoaded', () => {
     const selectAllCheckbox = document.getElementById('selectAll');
@@ -52,28 +52,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// ---------- FORMULAIRE FAVORI ----------
+//FORMULAIRE FAVORI
 
 function openFavori() {
-    document.getElementById('authFavori').style.display = 'flex';
+    document.getElementById('authFavori').style.display = 'flex';//affiche le formulaire
 }
 
 function fermerFavori() {
-    document.getElementById('authFavori').style.display = 'none';
+    document.getElementById('authFavori').style.display = 'none';//cache le formulaire
 }
 
 function showFavori(formId) {
-    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));
+    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));//désactive tous les formulaire
     const form = document.getElementById(formId);
     if (form) form.classList.add('active');
 
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    const tab = document.querySelector(`.tab[onclick*="${formId}"]`);
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));//désactive tous les onglets
+    const tab = document.querySelector(`.tab[onclick*="${formId}"]`);//cherche l'onglet tab
     if (tab) tab.classList.add('active');
 }
 
 
-// ---------- FORMULAIRE PAIEMENT ----------
+//FORMULAIRE PAIEMENT
 
 document.querySelector('.payer')?.addEventListener('click', function () {
     document.querySelector('.authPaiement').style.display = 'flex';
@@ -86,33 +86,34 @@ function fermerPaiement() {
 }
 
 
-// ---------- FORMULAIRE ARTICLE ----------
+//FORMULAIRE ARTICLE
 
 function openArticle() {
-    document.getElementById('authArticle').style.display = 'flex';
+    document.getElementById('authArticle').style.display = 'flex';//affiche le formulaire
 }
 
 function fermerArticle() {
-    document.getElementById('authArticle').style.display = 'none';
+    document.getElementById('authArticle').style.display = 'none';//cache le formulaire
 }
 
 function showArticle(formId) {
-    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));
+    document.querySelectorAll('form').forEach(f => f.classList.remove('active'));//désactive tous les formulaire
     const form = document.getElementById(formId);
     if (form) form.classList.add('active');
 
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    const tab = document.querySelector(`.tab[onclick*="${formId}"]`);
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));//désactive tous les onglets
+    const tab = document.querySelector(`.tab[onclick*="${formId}"]`);//cherche l'onglet tab
     if (tab) tab.classList.add('active');
 }
-// Récupérer l'ID du produit depuis l'URL
-const urlParams = new URLSearchParams(window.location.search);
+
+// Récupérer l'ID du produit depuis l'url
+const urlParams = new URLSearchParams(window.location.search);//récupère le produit et stocker dans id
 const id = urlParams.get('id');
 
 fetch('assets/json/produits.json')
   .then(response => response.json())
   .then(data => {
-    const produit = data.produits.find(p => p.id == id);
+    const produit = data.produits.find(p => p.id == id);//cherche dans la liste des produits qui a le meme id
 
     if (produit) {
       document.getElementById('image-produit').src = produit.image;
